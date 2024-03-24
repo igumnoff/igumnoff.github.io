@@ -8,9 +8,10 @@ layout: page
 - Shiva Libraty: Implementation in Rust of a parser and generator for documents of any type
 - CLI Shiva: Сonverting documents from any format to any
 
-Repo: https://github.com/igumnoff/shiva
 
-Docs: https://docs.rs/shiva
+Repo: [https://github.com/igumnoff/shiva](https://github.com/igumnoff/shiva)
+
+Docs: [https://docs.rs/shiva](https://docs.rs/shiva)
 
 Download: 
 - Linux: ...
@@ -21,15 +22,15 @@ Download:
 
 Gabriel2: Indeed, an actor library, not a framework, written in Rust
 
-Repo: https://github.com/igumnoff/gabriel2
+Repo: [https://github.com/igumnoff/gabriel2](https://github.com/igumnoff/gabriel2)
 
-Docs: https://docs.rs/gabriel2
+Docs: [https://docs.rs/gabriel2](https://docs.rs/gabriel2)
 
 ### Parvati
 ![shiva](parvati.png)
 
 Parvati: Indeed, an ORM library, not a framework, written in Rust
 
-Repo: https://github.com/igumnoff/parvati
+Repo: [https://github.com/igumnoff/parvati](https://github.com/igumnoff/parvati)
 
-Docs: https://docs.rs/parvati
+Docs: [https://docs.rs/parvati](https://docs.rs/parvati)
