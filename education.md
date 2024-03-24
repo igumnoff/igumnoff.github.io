@@ -7,6 +7,10 @@ permalink: /education/
 
 Location: Kazakhstan, Astana
 
+Languages: Russian, English
+
+Online: only by request by special over price
+
 ## Requirements for students
 
 I don't teach schoolchildren. I don't teach group classes. I work only individually with experienced students.
