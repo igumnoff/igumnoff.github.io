@@ -14,7 +14,7 @@ Telegram: @ievkz
 
 E-mail: igumnovnsk@gmail.com
 
-![Evgeny Igumnov](igumnov.jpg)
+![Evgeny Igumnov](/igumnov.jpg)
 
 ## Work experience
 

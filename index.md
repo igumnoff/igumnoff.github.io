@@ -4,7 +4,7 @@ permalink: /
 layout: page
 ---
 ### Shiva
-![shiva](shiva.png)
+![Shiva](/shiva.png)
 - Shiva Libraty: Implementation in Rust of a parser and generator for documents of any type
 - CLI Shiva: Сonverting documents from any format to any
 
@@ -18,7 +18,7 @@ Download:
 - Windows: ...
 
 ### Gabriel2
-![shiva](gabriel2.png)
+![Gabriel2](/gabriel2.png)
 
 Gabriel2: Indeed, an actor library, not a framework, written in Rust
 
@@ -27,7 +27,7 @@ Repo: [https://github.com/igumnoff/gabriel2](https://github.com/igumnoff/gabriel
 Docs: [https://docs.rs/gabriel2](https://docs.rs/gabriel2)
 
 ### Parvati
-![shiva](parvati.png)
+![Parvati](/parvati.png)
 
 Parvati: Indeed, an ORM library, not a framework, written in Rust
 
