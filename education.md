@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Education
-permalink: /education/
+permalink: /education
 ---
 Location: Kazakhstan, Astana
 
