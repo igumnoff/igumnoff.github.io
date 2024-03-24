@@ -6,8 +6,12 @@ permalink: /about/
 Software Development Sole Proprietorship specializing in the Rust language.
 
 ### Contacts
+Name: Evgeny Igumnov
+
+Location: Kazakhstan, Astana, Zheltoksan 2/1 - 66
 
 Telegram: @ievkz  
+
 E-mail: igumnovnsk@gmail.com
 
 ![Evgeny Igumnov](igumnov.jpg)
