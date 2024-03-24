@@ -3,8 +3,6 @@ layout: page
 title: Education
 permalink: /education/
 ---
-## Education details
-
 Location: Kazakhstan, Astana
 
 Languages: Russian, English
