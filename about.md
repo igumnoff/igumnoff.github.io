@@ -19,6 +19,8 @@ E-mail: igumnovnsk@gmail.com
 
 ### Jetico, Finland. September 2020 — till now. Rust developer.
 
+Development of an AI Server that analyzes the contents of documents: Actix-web, Hagging Face Candle.
+
 Developed document search/indexer engine using Rust, Actix, Tokio, SeaORM and SQLite.
 
 Built activation license server in Rust, Actix-Web, Diesel and MySQL.

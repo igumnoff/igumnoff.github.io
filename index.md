@@ -5,7 +5,7 @@ layout: page
 ---
 ### Shiva
 ![Shiva](/shiva.png)
-- Shiva Libraty: Implementation in Rust of a parser and generator for documents of any type
+- Shiva Library: Implementation in Rust of a parser and generator for documents of any type
 - CLI Shiva: Сonverting documents from any format to any
 
 | Document type | Parse | Generate |
@@ -13,15 +13,11 @@ layout: page
 | Plain text    | +     | +        |
 | Markdown      | +     | +        |
 | HTML          | +     | +        |
-| PDF           | +     | -        |
+| PDF           | +     | +        |
 
 Repo: [https://github.com/igumnoff/shiva](https://github.com/igumnoff/shiva)
 
 Docs: [https://docs.rs/shiva](https://docs.rs/shiva)
-
-Download: 
-- Linux: ...
-- Windows: ...
 
 ### Gabriel2
 ![Gabriel2](/gabriel2.png)
