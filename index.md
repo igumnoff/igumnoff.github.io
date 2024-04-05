@@ -15,9 +15,9 @@ Supported report types:
 - HTML
 - PDF
 
-Repo: https://github.com/igumnoff/metatron
+Repo: [https://github.com/igumnoff/metatron](https://github.com/igumnoff/metatron)
 
-Docs: https://docs.rs/metatron
+Docs: [https://docs.rs/metatron](https://docs.rs/metatron)
 
 
 ### Shiva
