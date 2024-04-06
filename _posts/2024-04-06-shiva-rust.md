@@ -1,279 +1,109 @@
 ---
 layout: post
-title:  "How to Easily Switch from Java to Rust: Tips and Tricks"
-date:   2023-07-26 14:30:59 +0500
-categories: java, rust
+title:  "Shiva — Open Source project in Rust for parsing and generating documents of any type"
+date:   2024-04-06 19:30:59 +0500
+categories: rust, parser, pdf
 ---
-After working on two commercial projects in Rust, I got a good practical experience in this language. These were backend services for web applications, where Rust was used for the main business logic and working with databases.
+The idea for the project came to me while working on a document search engine project. There is a library such as Apache Tika, written in Java, which can parse documents of various types. For my search engine to work, it must be able to extract text from different types of documents (PDF, DOC, XLS, HTML, XML, JSON, etc.). I wrote the search engine itself in Rust. But, unfortunately, in the Rust world there is no library that can parse documents of all types.
 
-In addition, I created three open source Rust libraries that I published on GitHub. This allowed me to learn more about idiomatic Rust, working with asynchrony, etc.
 
-In general, after working on these projects, as a Java developer, I have accumulated an interesting experience that I would like to share for those who are just starting to learn Rust, coming from the Java world. Here are some helpful tips to help you transition to Rust.
+For this reason, I had to use Apache Tika and call it from my Rust code. What are the disadvantages of such a solution?
 
-**Do not use &str when writing the first version of the code, it is better to immediately String**
+1. It is necessary to install Java on each computer where my search engine will be launched.
 
-Rust has two types of strings — &str and String. The first is a reference to the string, the second is the owning string. At first glance, &str seems to be the Java equivalent of String, and is best used by default.
+2. Very high RAM requirements. Apache Tika uses a lot of memory. Due to the fact that Java has a garbage collector that is not very efficient, it has to allocate a lot of memory to the JVM.
 
-However, in practice, it’s easier to start with String. This type is easier to use and behaves like a normal string in Java. And &str requires you to keep track of ownership and references.
+At that time, I did not write a library in Rust that could parse documents of all types, because the employer was not ready to pay for several years of my development. But the idea remained in my head. And so, I decided to take this step and began writing my own library in Rust.
 
-Therefore, I recommend using String in the first version of the code, and then optimize bottlenecks with &str.
+In fact, the task of creating such a library is quite interesting. It is necessary to develop a good library core architecture so that later it is easy to add new parsers and generators for various types of documents. I chose an approach based on using the Common Document Model (CDM). That is, any parser code must convert a document into a CDM, and any generator code must convert a CDM into a document.
 
-```rust
-fn main() {
-    let name = String::from("Alice");
-    print_greeting(name);
-}
-
-fn print_greeting(name: String) {
-    println!("Hello, {}!", name);
-}
-```
-
-**Easier debugging with derive(Debug)**
-
-In Java, we have debugging tools, and Rust has its own. However, to make debugging easier, you can use the **derive(Debug)** attribute on the structures you want to parse. This will allow you to automatically generate an implementation of the fmt::Debug method that can be used to print the state of an object using the println! function.
-```rust
-#[derive(Debug)]
-struct Person {
-    name: String,
-    age: u32,
-}
-
-fn main() {
-    let person = Person {
-        name: String::from("Bob"),
-        age: 30,
-    };
-
-    println!("Person: {:?}", person);
-}
-```
-**Don’t use references in function parameters**
-
-Rust doesn’t have garbage collection, so it’s important to manage memory explicitly. It is often recommended to use references like &T to pass data to functions. But at first it is better to avoid this.
-
-Instead, create copies of objects using the clone() method:
+In the core module I laid out the following structures:
 
 ```rust
-#[derive(Clone)] 
-struct MyData {
-   field: i32
+pub struct Document {
+    pub elements: Vec<Box<dyn Element>>,
+    pub page_width: f32,
+    pub page_height: f32,
+    pub left_page_indent: f32,
+    pub right_page_indent: f32,
+    pub top_page_indent: f32,
+    pub bottom_page_indent: f32,
+    pub page_header: Vec<Box<dyn Element>>,
+    pub page_footer: Vec<Box<dyn Element>>,
 }
 
-fn process(data: MyData) {
-   // работаем с data 
+trait Element  {
+   fn as_any(&self) -> &dyn Any; 
+
+   fn as_any_mut(&mut self) -> &mut dyn Any;
+
+   fn element_type(&self) -> ElementType;
 }
 
-fn main() {
-   let data = MyData { field: 42 };
-   process(data.clone()); 
+pub enum ElementType {
+   Text,
+   Paragraph,
+   Image,
+   Hyperlink,
+   Header,
+   Table,
+   TableHeader,
+   TableRow,
+   TableCell,
+   List,
+   ListItem,
+   PageBreak,
+   TableOfContents,
 }
 ```
-
-This will avoid many common mistakes. Then, when the code works, you can optimize bottlenecks by switching to links.
-
-**Use structs with functions instead of classes**
-
-It’s common in Java to create classes to organize code, and Rust uses structs for the same purpose. Instead of defining methods inside structs, as we do in classes, we define functions and implement them for concrete structs.
-
-Instead of a constructor, they implement the new function. For asynchronous code, it is better to return Arc<MyClass>, and for synchronous code — Rc<MyClass>. This will mimic the semantics of object references in Java.
-
+Since Rust doesn’t have Reflection, I decided to use Any. This way I can store different types of document elements in one vector. If necessary, I can cast them to the desired type via downcast_ref and downcast_mut. To do this, I added methods to the Element trait for all types of elements (for example, paragraph_as_ref, paragraph_as_mut, etc.)
 ```rust
-use std::sync::Arc;
-
-struct MyClass {
-  pub field: i32
-}
-
-impl MyClass {
-
-  fn new() -> Arc<MyClass> {
-    let obj = MyClass { field: 42 };
-    Arc::new(obj)
-  }
-
-}
-
-#[tokio::main]
-async fn main() {
-  
-  let obj1 = MyClass::new();
-
-  let obj2 = obj1.clone();
-
-  // objects obj1 and obj2 point to the same data
-
-  // thanks to Arc<T>
-
-}
-```
-**Using Result<T, E> instead of exceptions**
-
-In Java, errors are handled with exceptions. There are no exceptions in Rust. Instead, the Result<T, E> type is used, which is a pair: the value T and the error E.
-
-Here is an example of a function in Java that can return a value or an error:
-
-```java
-public String readFile(String filename) throws IOException {
-    File file = new File(filename);
-    if (!file.exists()) {
-        throw new IOException("File does not exist");
+    fn paragraph_as_ref(&self) -> anyhow::Result<&ParagraphElement> {
+        Ok(self
+            .as_any()
+            .downcast_ref::<ParagraphElement>()
+            .ok_or(CastingError::Common)?)
     }
 
-    FileInputStream inputStream = new FileInputStream(file);
-    byte[] bytes = new byte[(int) file.length()];
-    inputStream.read(bytes);
-    inputStream.close();
-
-    return new String(bytes);
-}
-```
-This function may return an IOException if the file does not exist. To handle this error, we can use try-catch.
-
-In Rust, we can write a function using the Result<T, E> type:
-
-```rust
-fn divide(a: i32, b: i32) -> Result<i32, String> {
-    if b == 0 {
-        Err("Division by zero".to_string())
-    } else {
-        Ok(a / b)
+    fn paragraph_as_mut(&mut self) -> anyhow::Result<&mut ParagraphElement> {
+        Ok(self
+            .as_any_mut()
+            .downcast_mut::<ParagraphElement>()
+            .ok_or(CastingError::Common)?)
     }
-}
 ```
-
-**Usage ? instead of unwrap() for error escalation**
-
-In Java, to escalate an error through the code above, we can use the throw statement, or in the function definition, we can simply specify the type of exception that might occur there. Rust uses the ? operator for this.
-
-Instead of the well-loved unwrap(), which can cause a panic in case of an error, we can use the ? operator to simply pass the error up. This avoids panics and gives you more control over error handling.
+In order to add a new document type, it is enough to implement the TransformerTrait trait:
 
 ```rust
-fn read_file(filename: &str) -> Result<(), std::io::Error> {
-    let mut file = File::open(filename)?;
-    let mut bytes = vec![];
-
-    file.read_to_end(&mut bytes)?;
-
-    Ok(())
+pub trait TransformerTrait {
+    fn parse(document: &Bytes, images: &HashMap<String, Bytes>) -> anyhow::Result<Document>;
+    fn generate(document: &Document) -> anyhow::Result<(Bytes, HashMap<String, Bytes>)>;
 }
 ```
-In this example, if the file does not exist, the function will return an error of type Error. This error will be propagated to the calling code.
+The following parsers and generators are currently implemented:
 
-**Use the thiserror library to declare errors**
 
-Java uses Exception to declare errors. There is no such thing in Rust. Instead, errors are declared using types.
+- Plain text
+- Markdown
+- HTML
+- PDF
 
-Using the thiserror library makes declaring errors in Rust very convenient and easy. With this library, you can use macros to declare bugs that automatically generate code for their release.
+To connect my library to your project, you need to add the following line to Cargo.toml:
 
 ```rust
-use thiserror::Error;
-
-#[derive(Error, Debug)]
-pub enum MyError {
-    #[error("Connection problem error")]
-    ConnectionError,
-    #[error("Access deny error")]
-    PermissionError,
-}
+[dependencies]
+shiva = "0.1.14"
 ```
-Using the thiserror library also allows you to automatically convert third-party library errors to your error.
+Example of using the library:
 
-```rust
-#[derive(Error, Debug)]
-pub enum DataStoreError {
-    #[error("data store disconnected")]
-    Disconnect(#[from] std::io::Error),
-}
-```
-**Use the log + env_logger libraries instead of println!**
-
-In Rust, I also recommend avoiding using println directly! for logging. Instead, I include the log library and use macros like info!, warn! or debug!.
-
-And then in main, initialize env_logger, which makes it easy to configure the output of logs to stdout or a file.
 ```rust
 fn main() {
-  env_logger::init();
-  
-  log::debug!("Application launched");
-  
-  // ...
+    let input_vec = std::fs::read("input.html").unwrap();
+    let input_bytes = bytes::Bytes::from(input_vec);
+    let document = shiva::html::Transformer::parse(&input_bytes, &HashMap::new()).unwrap();
+    let output_bytes = shiva::markdown::Transformer::generate(&document, &HashMap::new()).unwrap();
+    std::fs::write("out.md", output_bytes).unwrap();
 }
 ```
-This approach makes the code much cleaner and allows flexible control over application logging. In Java, I often used this pattern, so I was pleased to find a similar solution in the Rust ecosystem.
+The current status of the project is MVP (Minimum Viable Product). I plan to add support for all document types that Apache Tika supports over the next few years. And in the near future I will add deeper support for PDF documents, since PDF is the most popular type of document. I will also add a web service mode so that you can use my library via the REST API, and not just via the CLI.
 
-**Using Mutex for Asynchronous Code**
-
-In Java, when you want a variable to be readable by multiple threads, you simply pass a reference. In Rust, the analogue of these structures is Arc. Arc allows you to safely pass a reference to a variable between threads, but does not allow you to change the variable.
-
-In Java, when you want a variable to be available across multiple threads for modification, you use AtomicReference or ConcurrentHashMap.
-
-In Rust, if you want a variable to be available across multiple threads and changeable, you need to use a Mutex. A mutex allows you to acquire an exclusive lock on a variable, which allows other threads to wait until the thread that has gained access through the lock releases it.
-
-By the way, it’s better to use futures::lock::Mutex right away, and not std::sync::Mutex, since the second one is designed for non-asynchronous code.
-
-Here is an example of how to use Mutex for asynchronous code:
-```rust
-use futures::lock::Mutex;
-
-fn main() {
-    let mut counter = Mutex::new(0);
-
-    let handle1 = spawn(async {
-        let mut lock = counter.lock().await;
-        *lock += 1;
-    });
-
-    let handle2 = spawn(async {
-        let mut lock = counter.lock().await;
-        *lock += 1;
-    });
-
-    handle1.join().unwrap();
-    handle2.join().unwrap();
-
-    println!("{}", counter.lock().unwrap()); // 2
-}
-```
-In this example, we are creating a counter variable of type Mutex. We then start two asynchronous threads that increment the counter by one. At the end of the program, we print the value of the counter, which should be 2.
-
-**Overcoming limitations when using async functions in traits**
-
-Another interesting aspect of moving from Java to Rust is the use of traits. In Rust, you can’t declare asynchronous functions inside traits directly. However, there is a library called “async_trait” that allows you to get around this limitation.
-
-```rust
-use async_trait::async_trait;
-
-#[async_trait]
-trait Worker {
-    async fn do_work(&self);
-}
-
-struct MyWorker;
-
-#[async_trait]
-impl Worker for MyWorker {
-    async fn do_work(&self) {
-        println!("Working asynchronously");
-    }
-}
-
-#[tokio::main]
-async fn main() {
-    let worker = MyWorker;
-    worker.do_work().await;
-}
-```
-
-Thanks to the “async_trait” library, we can use async functions inside traits.
-
-**What conclusions do we have?**
-
-1. When migrating from Java to Rust, it’s best to start with simple types like String and avoid complex ones like &str. This will allow you to write a working version of the code faster.
-2. Using structs and associated functions instead of classes is in keeping with idiomatic Rust.
-3. Error handling in Rust uses the Result type instead of exceptions as in Java.
-4. Libraries like thiserror, log, and async_trait make it easy to write idiomatic code in Rust.
-
-**What do you want to say in conclusion?**
-
-Switching from Java to Rust can be tricky due to the differences in approach between the two languages. The main thing is to start with simple constructions, then gradually move on to idiomatic code.
