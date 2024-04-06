@@ -107,3 +107,4 @@ fn main() {
 ```
 The current status of the project is MVP (Minimum Viable Product). I plan to add support for all document types that Apache Tika supports over the next few years. And in the near future I will add deeper support for PDF documents, since PDF is the most popular type of document. I will also add a web service mode so that you can use my library via the REST API, and not just via the CLI.
 
+Repo: [https://github.com/igumnoff/shiva](https://github.com/igumnoff/shiva)
