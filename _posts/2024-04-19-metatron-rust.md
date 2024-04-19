@@ -127,9 +127,9 @@ which currently supports the following formats: Plain text, Markdown, HTML and P
 in the line 'let doc = Report::generate(template, data, &images).unwrap()' we get a report in the Common Document Model (CDM),
 supported by the Shiva library. In the future, as the number of document formats supported by this library grows, Metatron will also be able to automatically generate reports in new formats.
 
-The result is [report.pdf](![PDF](https://github.com/igumnoff/metatron/raw/HEAD/data/report.pdf)
-![PDF](https://github.com/igumnoff/metatron/raw/HEAD/pdf.png)
+The result is [report.pdf](https://github.com/igumnoff/metatron/raw/HEAD/data/report.pdf)
 
+![PDF](https://github.com/igumnoff/metatron/raw/HEAD/pdf.png)
 
 Currently, this project is in the MVP (Minimum Viable Product) stage. In the near future I plan to add:
 
