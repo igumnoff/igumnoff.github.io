@@ -2,7 +2,7 @@
 layout: post
 title:  "Metatron - Open Source library for generating reports in Rust language"
 date:   2024-04-19 22:32:01 +0500
-categories: rust, parser, pdf
+categories: rust, report, pdf
 ---
 A year ago, the idea arose to rewrite the entire Java backend in Rust, which I have been developing and supporting for several years. I found all the analogues of libraries and frameworks from the Java world in the Rust ecosystem:
 
