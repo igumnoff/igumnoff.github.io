@@ -11,6 +11,8 @@ Location: Kazakhstan, Astana, Z10M9K2, Zheltoksan 2/1 - 66
 
 Telegram: @ievkz  
 
+Discord: @igumnovnsk
+
 E-mail: igumnovnsk@gmail.com
 
 ![Evgeny Igumnov](/igumnov.jpg)
