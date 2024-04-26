@@ -64,7 +64,7 @@ Docs: [https://docs.rs/gabriel2](https://docs.rs/gabriel2)
 ### Parvati
 ![Parvati](/parvati.png)
 
-Parvati: Indeed, an ORM library, not a framework, written in Rust
+Parvati library: ORM library with no boilerplate code, written in Rust.
 
 - [x] SQLite support
 - [x] MySQL support
