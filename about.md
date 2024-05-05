@@ -9,7 +9,7 @@ Name: Evgeny Igumnov
 
 Location: Kazakhstan, Astana, Z10M9K2, Zheltoksan 2/1 - 66
 
-Telegram: @ievkz  
+Telegram: @ievkz 
 
 Discord: @igumnovnsk
 
@@ -19,7 +19,7 @@ E-mail: igumnovnsk@gmail.com
 
 ## Work experience
 
-### Jetico, Finland. September 2020 — till now. Rust developer.
+### Jetico, Finland. September 2020 — till now. Senior Rust developer.
 
 Development of an AI Server that analyzes the contents of documents: Actix-web, Hagging Face Candle.
 
@@ -27,7 +27,7 @@ Developed document search/indexer engine using Rust, Actix, Tokio, SeaORM and SQ
 
 Built activation license server in Rust, Actix-Web, Diesel and MySQL.
 
-### Jetico, Finland. September 2014 — August 2020. Java/Scala/Angular developer.
+### Jetico, Finland. September 2014 — August 2020. Senior Java/Scala/Angular developer.
 
 Developed Jetico Central Manager server using Scala, TypeScript, Spring Framework, Hibernate, Angular.
 
@@ -37,7 +37,7 @@ Developed Jetico Messenger server using Scala, Akka, Slick, TypeScript, Angular,
 
 Made License Generator using Scala, PlayFramework, Slick.
 
-### MyLivePage, USA. January 2007 — August 2014. Founder, PHP developer, Highload expert.
+### MyLivePage, USA. January 2007 — August 2014. Founder, Senior PHP developer, Highload expert.
 
 Managed and built all departments of the company.
 
@@ -45,7 +45,7 @@ Developed core CMS in PHP and optimized for highload environments.
 
 Provided expertise in SQL optimization, caching, and other performance improvements.
 
-### Geocad, Russia. February 2001 — December 2006. Java developer
+### Geocad, Russia. February 2001 — December 2006. Senior Java developer
 
 Worked on backend development and database structure design.
 
