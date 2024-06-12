@@ -17,8 +17,6 @@ Supported report types:
 
 Repo: [https://github.com/igumnoff/metatron](https://github.com/igumnoff/metatron)
 
-Docs: [https://docs.rs/metatron](https://docs.rs/metatron)
-
 
 ### Shiva
 ![Shiva](/shiva.png)
@@ -40,8 +38,6 @@ Features:
 
 Repo: [https://github.com/igumnoff/shiva](https://github.com/igumnoff/shiva)
 
-Docs: [https://docs.rs/shiva](https://docs.rs/shiva)
-
 ### Gabriel2
 ![Gabriel2](/gabriel2.png)
 
@@ -59,8 +55,6 @@ Features:
 
 Repo: [https://github.com/igumnoff/gabriel2](https://github.com/igumnoff/gabriel2)
 
-Docs: [https://docs.rs/gabriel2](https://docs.rs/gabriel2)
-
 ### Parvati
 ![Parvati](/parvati.png)
 
@@ -71,4 +65,3 @@ Parvati library: ORM library with no boilerplate code, written in Rust.
 
 Repo: [https://github.com/igumnoff/parvati](https://github.com/igumnoff/parvati)
 
-Docs: [https://docs.rs/parvati](https://docs.rs/parvati)
