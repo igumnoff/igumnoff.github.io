@@ -38,6 +38,15 @@ Features:
 | Markdown      | +     | +        |
 | HTML          | +     | +        |
 | PDF           | +     | +        |
+| JSON          | +     | +        |
+| XML           | +     | +        |
+| CSV           | +     | +        |
+| RTF           | +     | +        |
+| DOCX          | +     | +        |
+| XLS           | +     | -        |
+| XLSX          | +     | +        |
+| ODS           | +     | +        |
+| Typst         | -     | +        |
 
 Repo: [https://github.com/igumnoff/shiva](https://github.com/igumnoff/shiva)
 
