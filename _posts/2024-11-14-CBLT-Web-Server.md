@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CBLT — A Safe, Fast, and Minimalistic Web Server in Rust Programming Language"
-date:   2014-11-14 21:12:01 +0500
+date:   2024-11-14 21:12:01 +0500
 categories: rust, web, server, proxy
 ---
 
