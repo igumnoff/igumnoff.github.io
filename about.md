@@ -27,6 +27,8 @@ Developed document search/indexer engine using Rust, Actix, Tokio, SeaORM and SQ
 
 Built activation license server in Rust, Actix-Web, Diesel and MySQL.
 
+Developed Escrow Smart Contract Project using Solana SDK, Anchor, Phantom Wallet, Solana-Web3.js, Angular, Axum, Kubernetes, Postgres.
+
 ### Jetico, Finland. September 2014 — August 2020. Senior Java/Scala/Angular developer.
 
 Developed Jetico Central Manager server using Scala, TypeScript, Spring Framework, Hibernate, Angular.
