@@ -19,7 +19,15 @@ E-mail: igumnovnsk@gmail.com
 
 ## Work experience
 
-### Jetico, Finland. September 2020 — till now. Senior Rust developer.
+### Jetico, Finland. June 2024 — till now. Senior Applied AI/ML Engineer
+
+Development of a test site for testing search and indexing algorithms: Python, FastAPI, OpenAI, RAG,  Embedding.
+
+Development of tarot card deck generation: Python. OpenAI, MCP, LLM, Text-to-Image.
+
+Development of a telegram bot for generating audio books: Python, Telegram API, OuteTTS, Text-to-Speach
+
+### Jetico, Finland. September 2020 — May 2024. Senior Rust developer.
 
 Development of an AI Server that analyzes the contents of documents: Axum, Hagging Face Candle.
 
