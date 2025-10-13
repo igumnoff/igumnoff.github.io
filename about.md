@@ -11,25 +11,16 @@ Location: Kazakhstan, Astana, Z10M9K2, Zheltoksan 2/1 - 66
 
 Telegram: @ievkz 
 
-Discord: @igumnovnsk
-
 E-mail: igumnovnsk@gmail.com
 
 ![Evgeny Igumnov](/igumnov.jpg)
 
 ## Work experience
 
-### Jetico, Finland. June 2024 — till now. Senior Applied AI/ML Engineer
 
-Development of a test site for testing search and indexing algorithms: Python, FastAPI, OpenAI, RAG,  Embedding.
+### Jetico, Finland. September 2020 — till now. Senior Rust developer.
 
-Development of tarot card deck generation: Python. OpenAI, MCP, LLM, Text-to-Image.
-
-Development of a telegram bot for generating audio books: Python, Telegram API, OuteTTS, Text-to-Speach
-
-### Jetico, Finland. September 2020 — May 2024. Senior Rust developer.
-
-Development of an AI Server that analyzes the contents of documents: Axum, Hagging Face Candle.
+Implemented an adaptive open-set text-classification training pipeline in Rust using Candle/CUDA—Linear Head training with stratified splits, per-class TPR-based threshold calibration, iterative fine-tuning with snapshotting and best-model selection by min(total_errors), and reproducible JSON bundle save/evaluate (confusion matrix + open-set accuracy).
 
 Developed document search/indexer engine using Rust, Actix, Tokio, SeaORM and SQLite.
 
