@@ -3,17 +3,34 @@ layout: page
 title: About
 permalink: /about
 ---
-Principal software developer specializing in Rust, backend systems, and AI-assisted software engineering with Codex and Claude Code.
+## Name: Evgeny Igumnov
 
-Name: Evgeny Igumnov
+Principal software developer specializing in Rust, backend systems, and AI-assisted software engineering with Codex and Claude Code.
 
 Location: Kazakhstan, Astana, Z10M9K2, Zheltoksan 2/1 - 66
 
 Telegram: @ievkz
 
+Reddit: https://www.reddit.com/user/ievkz/
+
+Habr: https://habr.com/ru/users/igumnov/articles/
+
 E-mail: igumnovnsk@gmail.com
 
 ![Evgeny Igumnov](/igumnov.jpg)
+
+## Achievements
+
+1. MyLivePage Service – Website Builder: Successfully scaled to 10 million users with over 20 million page views per day. Stack: Linux, PHP, Lighttpd, MySQL, Memcache.
+2. CBLT Web Server – Engineered a custom web server that outperforms Nginx by 10x for serving static files under 100KB. Stack: Rust, Tokio.
+
+Maintainer in Open Source Project:
+
+CBLT: Safe and fast minimalistic web server, written in Rust, it works 10 times faster than Nginx.
+
+https://github.com/evgenyigumnov/cblt
+
+
 
 ## Work experience
 
