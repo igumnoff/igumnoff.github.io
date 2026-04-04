@@ -3,6 +3,9 @@ layout: page
 title: About
 permalink: /about
 ---
+
+<img src="/igumnov.jpg" alt="Evgeny Igumnov" align="right" width="180" />
+
 ## Name: Evgeny Igumnov
 
 Principal software developer specializing in Rust, backend systems, and AI-assisted software engineering with Codex and Claude Code.
@@ -17,7 +20,7 @@ Habr: https://habr.com/ru/users/igumnov/articles/
 
 E-mail: igumnovnsk@gmail.com
 
-![Evgeny Igumnov](/igumnov.jpg)
+<div style="clear: both;"></div>
 
 ## Achievements
 
@@ -30,8 +33,6 @@ CBLT: Safe and fast minimalistic web server, written in Rust, it works 10 times 
 
 https://github.com/evgenyigumnov/cblt
 
-
-
 ## Work experience
 
 ### Jetico, Finland. September 2020 — Present. Principal Rust Developer.
@@ -40,7 +41,7 @@ Work in an AI-assisted development workflow using Codex and Claude Code for code
 
 Implemented an adaptive open-set text-classification training pipeline in Rust using Candle/CUDA, including Linear Head training with stratified splits, per-class TPR-based threshold calibration, iterative fine-tuning with snapshotting, best-model selection by min(total_errors), and reproducible JSON bundle save/evaluate with confusion matrix and open-set accuracy.
 
-Developed a document search and indexing engine using Rust, Actix, Tokio, SeaORM, and SQLite.
+Developed a document search and indexing engine in Rust using Actix, Tokio, SeaORM, and SQLite.
 
 Built an activation license server in Rust using Actix-Web, Diesel, and MySQL.
 
