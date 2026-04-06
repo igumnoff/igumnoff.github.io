@@ -6,7 +6,7 @@ permalink: /about
 
 <img src="/igumnov.jpg" alt="Evgeny Igumnov" align="right" width="180" />
 
-## Name: Evgeny Igumnov
+## Evgeny Igumnov
 
 Principal software developer specializing in Rust, backend systems, and AI-assisted software engineering with Codex and Claude Code.
 
@@ -17,6 +17,8 @@ Telegram: @ievkz
 Reddit: https://www.reddit.com/user/ievkz/
 
 Habr: https://habr.com/ru/users/igumnov/articles/
+
+Books: https://www.litres.ru/author/evgeniy-valerevich-igumnov/
 
 E-mail: igumnovnsk@gmail.com
 
