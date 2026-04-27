@@ -14,11 +14,11 @@ Location: Kazakhstan, Astana, Z10M9K2, Zheltoksan 2/1 - 66
 
 Telegram: @ievkz
 
-Reddit: https://www.reddit.com/user/ievkz/
+Reddit: [https://www.reddit.com/user/ievkz/](https://www.reddit.com/user/ievkz/)
 
-Habr: https://habr.com/ru/users/igumnov/articles/
+Habr: [https://habr.com/ru/users/igumnov/articles/](https://habr.com/ru/users/igumnov/articles/)
 
-Books: https://www.litres.ru/author/evgeniy-valerevich-igumnov/
+Books: [https://www.litres.ru/author/evgeniy-valerevich-igumnov/](https://www.litres.ru/author/evgeniy-valerevich-igumnov/)
 
 E-mail: igumnovnsk@gmail.com
 
@@ -33,13 +33,13 @@ Maintainer in Open Source Project:
 
 CBLT: Safe and fast minimalistic web server, written in Rust, it works 10 times faster than Nginx.
 
-https://github.com/evgenyigumnov/cblt
+[https://github.com/evgenyigumnov/cblt](https://github.com/evgenyigumnov/cblt)
 
 ## Work experience
 
 ### Relayna Inc, USA. March 2026 — Present.  CTO/CEO/Principal Software Developer/Desktop & Backend Developer
 
-Founded and led development of Relayna, an AI assistant platform for desktop, web, cloud, and mobile use cases.
+Founded and led development of [Relayna](https://relayna.com), an AI assistant platform for desktop, web, cloud, and mobile use cases.
 
 Designed and implemented the core desktop application architecture using Electron, React, and Rust-based backend components.
 
