@@ -37,6 +37,40 @@ https://github.com/evgenyigumnov/cblt
 
 ## Work experience
 
+### Relayna Inc, USA. March 2026 — Present.  CTO/CEO/Principal Software Developer/Desktop & Backend Developer
+
+Founded and led development of Relayna, an AI assistant platform for desktop, web, cloud, and mobile use cases.
+
+Designed and implemented the core desktop application architecture using Electron, React, and Rust-based backend components.
+
+Built a local-first AI assistant runtime with support for multi-step reasoning, tool execution, background tasks, local configuration, and provider-based LLM integration.
+
+Implemented support for multiple AI providers, including OpenAI-compatible APIs, Ollama, cloud-hosted providers, and local model execution.
+
+Developed the standalone desktop GUI application with Electron + React, including chat UI, settings, provider configuration, themes, and assistant workflow controls.
+
+Built a CLI/container runtime used in cloud deployments, allowing each user session to run inside an isolated Docker container.
+
+Designed and developed the cloud backend architecture using Rust, Axum, SQLX, MySQL, WebSocket, REST API, and Docker container orchestration.
+
+Implemented backend services for user authentication, paid-user access control, container lifecycle management, API proxying, and cloud-to-container communication.
+
+Developed the public web application and landing pages using React, including authenticated user flows and paid-user integration with the backend.
+
+Started mobile client development using React Native and Expo, with adaptive layouts for mobile devices and wide-screen browser usage.
+
+Implemented integrations and tooling for Gmail/Google, IMAP/SMTP, file operations, document processing, URL extraction, browser automation, and assistant-controlled workflows.
+
+Designed the internal skills and tools architecture, enabling the assistant to call structured tools instead of relying on fragile keyword-based parsing of LLM responses.
+
+Built infrastructure for background tasks, user profile management, model-provider settings, local/cloud configuration, and assistant execution tracing.
+
+Worked on local speech recognition integration using faster-whisper, including model selection, dependency setup, and desktop IPC integration.
+
+Managed DevOps and production infrastructure, including Docker images, Docker Swarm, Nginx, TLS certificates, mail server setup, DNS configuration, and deployment automation.
+
+Established engineering standards for the repository, including build validation, migration rules, configuration management, multi-theme UI consistency, and production-quality code review.
+
 ### Jetico, Finland. September 2020 — Present. Principal Rust Developer.
 
 Work in an AI-assisted development workflow using Codex and Claude Code for codebase navigation, implementation, refactoring, debugging, and test generation, while maintaining production-level quality standards.
