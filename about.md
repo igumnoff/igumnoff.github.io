@@ -10,9 +10,7 @@ permalink: /about
 
 Principal software developer specializing in Rust, backend systems, and AI-assisted software engineering with Codex and Claude Code.
 
-Location: Kazakhstan, Astana, Z10M9K2, Zheltoksan 2/1 - 66
-
-Telegram: @ievkz
+Location: Kazakhstan, Astana
 
 Reddit: [https://www.reddit.com/user/ievkz/](https://www.reddit.com/user/ievkz/)
 
@@ -20,7 +18,7 @@ Habr: [https://habr.com/ru/users/igumnov/articles/](https://habr.com/ru/users/ig
 
 Books: [https://www.litres.ru/author/evgeniy-valerevich-igumnov/](https://www.litres.ru/author/evgeniy-valerevich-igumnov/)
 
-E-mail: igumnovnsk@gmail.com
+E-mail: evgeny@relayna.com
 
 <div style="clear: both;"></div>
 
@@ -39,37 +37,15 @@ CBLT: Safe and fast minimalistic web server, written in Rust, it works 10 times 
 
 ### Relayna Inc, USA. March 2026 — Present.  CTO/CEO/Principal Software Developer/Desktop & Backend Developer
 
-Founded and led development of [Relayna](https://relayna.com), an AI assistant platform for desktop, web, cloud, and mobile use cases.
+Founded and led development of [Relayna](https://relayna.com), an AI assistant platform for desktop, web, cloud, and mobile.
 
-Designed and implemented the core desktop application architecture using Electron, React, and Rust-based backend components.
+Designed and built the core architecture using **Electron, React, Rust, Axum, SQLX, MySQL, WebSocket, REST API, Docker, and React Native/Expo**.
 
-Built a local-first AI assistant runtime with support for multi-step reasoning, tool execution, background tasks, local configuration, and provider-based LLM integration.
+Implemented a local-first AI assistant runtime with multi-step reasoning, tool execution, background tasks, provider-based LLM integration, local/cloud configuration, and execution tracing.
 
-Implemented support for multiple AI providers, including OpenAI-compatible APIs, Ollama, cloud-hosted providers, and local model execution.
+Built the desktop app, cloud/container runtime, backend services, public web app, mobile client foundation, and integrations for Gmail/Google, IMAP/SMTP, file operations, document processing, URL extraction, browser automation, and speech recognition with faster-whisper.
 
-Developed the standalone desktop GUI application with Electron + React, including chat UI, settings, provider configuration, themes, and assistant workflow controls.
-
-Built a CLI/container runtime used in cloud deployments, allowing each user session to run inside an isolated Docker container.
-
-Designed and developed the cloud backend architecture using Rust, Axum, SQLX, MySQL, WebSocket, REST API, and Docker container orchestration.
-
-Implemented backend services for user authentication, paid-user access control, container lifecycle management, API proxying, and cloud-to-container communication.
-
-Developed the public web application and landing pages using React, including authenticated user flows and paid-user integration with the backend.
-
-Started mobile client development using React Native and Expo, with adaptive layouts for mobile devices and wide-screen browser usage.
-
-Implemented integrations and tooling for Gmail/Google, IMAP/SMTP, file operations, document processing, URL extraction, browser automation, and assistant-controlled workflows.
-
-Designed the internal skills and tools architecture, enabling the assistant to call structured tools instead of relying on fragile keyword-based parsing of LLM responses.
-
-Built infrastructure for background tasks, user profile management, model-provider settings, local/cloud configuration, and assistant execution tracing.
-
-Worked on local speech recognition integration using faster-whisper, including model selection, dependency setup, and desktop IPC integration.
-
-Managed DevOps and production infrastructure, including Docker images, Docker Swarm, Nginx, TLS certificates, mail server setup, DNS configuration, and deployment automation.
-
-Established engineering standards for the repository, including build validation, migration rules, configuration management, multi-theme UI consistency, and production-quality code review.
+Managed production infrastructure including Docker images, Docker Swarm, Nginx, TLS, DNS, mail server setup, deployment automation, and repository engineering standards.
 
 ### Jetico, Finland. September 2020 — Present. Principal Rust Developer.
 
