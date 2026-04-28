@@ -12,6 +12,8 @@ Principal software developer specializing in Rust, backend systems, and AI-assis
 
 Location: Kazakhstan, Astana
 
+Telegram: @ievkz
+
 Reddit: [https://www.reddit.com/user/ievkz/](https://www.reddit.com/user/ievkz/)
 
 Habr: [https://habr.com/ru/users/igumnov/articles/](https://habr.com/ru/users/igumnov/articles/)
