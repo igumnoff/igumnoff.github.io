@@ -22,6 +22,8 @@ Books: [https://www.litres.ru/author/evgeniy-valerevich-igumnov/](https://www.li
 
 E-mail: evgeny@relayna.com
 
+GitHub: [https://github.com/evgenyigumnov](https://github.com/evgenyigumnov)
+
 <div style="clear: both;"></div>
 
 ## Achievements
