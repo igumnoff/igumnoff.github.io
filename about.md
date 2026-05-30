@@ -14,15 +14,18 @@ Location: Kazakhstan, Astana
 
 Telegram: @ievkz
 
+E-mail: evgeny@relayna.com
+
 Reddit: [https://www.reddit.com/user/ievkz/](https://www.reddit.com/user/ievkz/)
 
 Habr: [https://habr.com/ru/users/igumnov/articles/](https://habr.com/ru/users/igumnov/articles/)
 
 Books: [https://www.litres.ru/author/evgeniy-valerevich-igumnov/](https://www.litres.ru/author/evgeniy-valerevich-igumnov/)
 
-E-mail: evgeny@relayna.com
-
 GitHub: [https://github.com/evgenyigumnov](https://github.com/evgenyigumnov)
+
+Instagram: [https://www.instagram.com/secretnsk](https://www.instagram.com/secretnsk) (travel, lifestyle, etc.)
+
 
 <div style="clear: both;"></div>
 
