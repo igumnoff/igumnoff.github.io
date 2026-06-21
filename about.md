@@ -24,6 +24,8 @@ Books: [https://www.litres.ru/author/evgeniy-valerevich-igumnov/](https://www.li
 
 GitHub: [https://github.com/evgenyigumnov](https://github.com/evgenyigumnov)
 
+LinkedIn: [https://www.linkedin.com/in/evgeny-igumnov-5121841/](https://www.linkedin.com/in/evgeny-igumnov-5121841/)
+
 Instagram: [https://www.instagram.com/secretnsk](https://www.instagram.com/secretnsk) (travel, lifestyle, etc.)
 
 
