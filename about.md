@@ -4,7 +4,7 @@ title: About
 permalink: /about
 ---
 
-<img src="/igumnov.jpg" alt="Evgeny Igumnov" align="right" width="180" />
+<img src="/igumnov.png" alt="Evgeny Igumnov" align="right" width="180" />
 
 ## Evgeny Igumnov
 
