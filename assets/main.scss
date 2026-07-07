@@ -666,10 +666,13 @@ a {
 }
 
 .footer-nav {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: clamp(28px, 7vw, 84px);
+  justify-content: center;
   margin-bottom: 14px;
+  width: 100%;
 }
 
 .footer-nav a {
@@ -677,6 +680,13 @@ a {
   font-size: 14px;
   font-weight: 800;
   text-decoration: none;
+}
+
+.site-footer .footer-col-wrapper,
+.site-footer .footer-col {
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .footer-nav a:hover {
