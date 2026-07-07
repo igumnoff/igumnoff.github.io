@@ -35,6 +35,7 @@ permalink: /about
   <a href="https://habr.com/ru/users/igumnov/articles/">Habr</a>
   <a href="https://www.reddit.com/user/ievkz/">Reddit</a>
   <a href="https://www.litres.ru/author/evgeniy-valerevich-igumnov/">Books</a>
+  <a href="https://www.instagram.com/secretnsk">Instagram</a>
 </section>
 
 <section class="about-stats">
