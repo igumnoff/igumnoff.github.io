@@ -29,42 +29,6 @@ permalink: /
       <a class="button button-secondary" href="{{ "/blog" | relative_url }}">Read engineering notes <span>&rarr;</span></a>
     </div>
   </div>
-
-  <div class="hero-system" aria-label="Technical architecture preview">
-    <div class="system-panel">
-      <div class="system-panel-header">
-        <span>Relayna-style platform architecture</span>
-        <b>Production</b>
-      </div>
-      <div class="system-diagram">
-        <div class="diagram-node top">Desktop / Web / Mobile</div>
-        <div class="diagram-node wide">API Gateway</div>
-        <div class="diagram-row">
-          <div class="diagram-node">AI Runtime</div>
-          <div class="diagram-node">Tool Execution</div>
-          <div class="diagram-node">Background Jobs</div>
-        </div>
-        <div class="diagram-row">
-          <div class="diagram-node">Rust Services</div>
-          <div class="diagram-node">SQLx / MySQL</div>
-          <div class="diagram-node">Docker / Nginx</div>
-        </div>
-      </div>
-      <div class="system-status">
-        <div>
-          <strong>Runtime</strong>
-          <span>Multi-step reasoning, tracing, provider-based LLMs.</span>
-        </div>
-        <div>
-          <strong>Infrastructure</strong>
-          <span>Docker Swarm, TLS, DNS, deployment automation.</span>
-        </div>
-      </div>
-      <div class="system-stack">
-        Rust / Axum / SQLx / MySQL / Redis / Docker / Nginx / WebSocket / React / React Native
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="role-grid" aria-label="Positioning">
