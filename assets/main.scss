@@ -208,12 +208,6 @@ a {
   padding: 24px;
 }
 
-.role-grid span {
-  color: var(--accent-dark);
-  font-size: 12px;
-  font-weight: 900;
-}
-
 .role-grid h2,
 .section-heading h2,
 .project-card h3 {
@@ -325,6 +319,27 @@ a {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 10px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(240px, 0.42fr) minmax(0, 0.58fr);
+  overflow: hidden;
+  padding: 0;
+}
+
+.post-cover-link {
+  display: block;
+  min-height: 100%;
+}
+
+.post-cover {
+  aspect-ratio: 16 / 9;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-list-body {
   padding: 22px 24px;
 }
 
@@ -336,7 +351,8 @@ a {
 @media (max-width: 860px) {
   .hero,
   .role-grid,
-  .project-grid {
+  .project-grid,
+  .post-list > li {
     grid-template-columns: 1fr;
   }
 

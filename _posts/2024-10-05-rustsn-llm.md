@@ -3,6 +3,7 @@ layout: post
 title:  "rustsn — Open Source Project for Code Generation and Interaction with Existing Code Using LLM"
 date:   2024-10-05 11:13:01 +0500
 categories: rust, llm
+image: /assets/img/posts/rustsn-local-llm.jpg
 ---
 I’ve been working on a tool called rustsn, which allows generating, compiling, and testing code using LLMs (Large Language Models). Initially, the idea was to automate the process of writing small pieces of code — so-called snippets — for different programming languages based on user-provided explanations. This tool has since evolved and gained new features, such as generating complete code for applications and explaining existing code based on vector representations (embeddings).
 

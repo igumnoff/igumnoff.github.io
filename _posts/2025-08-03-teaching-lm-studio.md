@@ -3,6 +3,7 @@ layout: post
 title:  "Teaching LM Studio to Browse the Internet When Answering Questions"
 date:   2025-08-03 12:21:01 +0500
 categories: ai, mcp, brave, url
+image: /assets/img/posts/lm-studio-mcp-browsing.jpg
 ---
 I really like LM Studio because it allows you to run AI models locally, preserving the privacy of your conversations with the AI. However, compared to commercial online models, LM Studio doesn’t support internet browsing “out of the box.” Those models can’t use up-to-date information from the Internet to answer questions.
 

@@ -3,6 +3,7 @@ layout: post
 title:  "How to Create an AI Telegram Bot with Vector Memory on Qdrant"
 date:   2025-01-30 11:01:07 +0500
 categories: rust, ai, agent, telegram, embedding, qdrant
+image: /assets/img/posts/telegram-qdrant-agent.jpg
 ---
 
 The idea for this pet project came from my desire to build my own AI agent. I established minimal technical requirements for myself: the agent should have multiple states, be able to launch tools, and use RAG (Retrieval Augmented Generation) to search for answers.

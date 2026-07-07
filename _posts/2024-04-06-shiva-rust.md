@@ -3,6 +3,7 @@ layout: post
 title:  "Shiva — Open Source project in Rust for parsing and generating documents of any type"
 date:   2024-04-06 19:30:59 +0500
 categories: rust, parser, pdf
+image: /assets/img/posts/shiva-document-rust.jpg
 ---
 The idea for the project came to me while working on a document search engine project. There is such a library
 like Apache Tika, written in Java, which can parse documents of various types.

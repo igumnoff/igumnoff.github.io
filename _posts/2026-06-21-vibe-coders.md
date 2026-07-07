@@ -3,6 +3,7 @@ layout: post
 title: "Are You Tired of Vibe Coders Yet?"
 date: 2026-06-21 14:05:00 +0500
 categories: ai, hiring, programming
+image: /assets/img/posts/vibe-coders.jpg
 ---
 
 ![Vibe coding](/vibe.png)

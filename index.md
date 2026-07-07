@@ -34,17 +34,14 @@ permalink: /
 
 <section class="role-grid" aria-label="Positioning">
   <article>
-    <span>01</span>
     <h2>Founder</h2>
     <p>Built and scaled products, teams, and operations, including MyLivePage reaching millions of users.</p>
   </article>
   <article>
-    <span>02</span>
     <h2>CTO</h2>
     <p>Owns architecture, delivery, infrastructure, deployment, and the technical shape of the product.</p>
   </article>
   <article>
-    <span>03</span>
     <h2>Principal Developer</h2>
     <p>Still writes production systems in Rust, React, Electron, Axum, SQLX, Docker, and related tooling.</p>
   </article>

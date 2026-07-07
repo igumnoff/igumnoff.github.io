@@ -3,6 +3,7 @@ layout: post
 title:  "CBLT — A Safe, Fast, and Minimalistic Web Server in Rust Programming Language"
 date:   2024-11-14 21:12:01 +0500
 categories: rust, web, server, proxy
+image: /assets/img/posts/cblt-web-server.jpg
 ---
 
 To learn a new programming language, I use the following approach. First, I read a tutorial for that programming language, which explains the syntax, idioms, philosophy, and principles of how the language works. After that, I write a small pet project in that programming language. In the pet project, I practice a bit with the new language, its standard libraries, and popular frameworks.
