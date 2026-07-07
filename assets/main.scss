@@ -128,7 +128,8 @@ a {
 }
 
 .button-primary {
-  background: var(--text);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  box-shadow: 0 10px 22px rgba(32, 199, 201, 0.22);
   color: #fff;
 }
 
