@@ -5,45 +5,98 @@ permalink: /
 ---
 
 <section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">Founder / CTO / Principal Software Developer</p>
-    <h1>Founder/CTO who still builds the system.</h1>
-    <p class="lead">
-      I build Rust, AI assistant, document engine, backend, and high-load platforms
-      from architecture to launch.
-    </p>
-    <div class="hero-actions">
-      <a class="button button-primary" href="#work">View technical work</a>
-      <a class="button button-secondary" href="{{ "/blog" | relative_url }}">Read engineering notes</a>
-    </div>
-    <div class="proof-row" aria-label="Career highlights">
-      <span>MyLivePage: 10M users</span>
-      <span>20M page views/day</span>
-      <span>Relayna: AI assistant platform</span>
-    </div>
-  </div>
-
   <div class="hero-portrait">
     <img src="{{ "/assets/img/evgeny-business.png" | relative_url }}" alt="Evgeny Igumnov">
     <div class="portrait-card">
       <strong>Evgeny Igumnov</strong>
-      <span>Rust, AI tooling, document engines, production infrastructure</span>
+      <span>Founder • CTO • Principal Software Developer</span>
+    </div>
+  </div>
+
+  <div class="hero-copy">
+    <h1>Founder/CTO who still builds the system.</h1>
+    <p class="lead">
+      Rust, AI assistants, document engines, high-load platforms, and production
+      infrastructure from architecture to launch.
+    </p>
+    <div class="proof-row" aria-label="Career highlights">
+      <span><b>M</b> MyLivePage:<br>10M users / 20M page views per day</span>
+      <span><b>R</b> Relayna:<br>AI assistant platform</span>
+      <span><b>J</b> Jetico:<br>Principal Rust Developer</span>
+    </div>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#work">View technical work <span>→</span></a>
+      <a class="button button-secondary" href="{{ "/blog" | relative_url }}">Read engineering notes <span>→</span></a>
+    </div>
+  </div>
+
+  <div class="hero-system" aria-label="Technical architecture preview">
+    <div class="system-card architecture">
+      <span>System Architecture</span>
+      <div class="arch-box">Web / Desktop / Mobile</div>
+      <div class="arch-line"></div>
+      <div class="arch-row">
+        <i>AI Orchestrator</i><i>Tools & Integrations</i><i>Background Workers</i>
+      </div>
+      <div class="arch-row">
+        <i>Data Layer</i><i>Object Storage</i>
+      </div>
+    </div>
+    <div class="system-card code">
+      <span>Rust / Axum</span>
+      <pre>use axum::{routing::post, Json, Router};
+use serde::{Deserialize, Serialize};
+
+#[derive(Deserialize)]
+struct Prompt { prompt: String }
+
+async fn handle_prompt(Json(payload): Json&lt;Prompt&gt;) {
+    // orchestrate tools and response
+}</pre>
+    </div>
+    <div class="system-card trace">
+      <span>AI Reasoning Trace</span>
+      <p>✓ Received user request <em>120ms</em></p>
+      <p>✓ Analyze intent <em>210ms</em></p>
+      <p>✓ Select tools <em>260ms</em></p>
+      <p>✓ Synthesize answer <em>310ms</em></p>
+    </div>
+    <div class="system-card deploy">
+      <span>Deployment</span>
+      <p>● API Service <b>Healthy</b></p>
+      <p>● Web App <b>Healthy</b></p>
+      <p>● Worker Service <b>Healthy</b></p>
+      <p>● DB / Redis <b>Healthy</b></p>
+    </div>
+    <div class="system-card traffic">
+      <span>Traffic (RPS)</span>
+      <div class="sparkline"></div>
+    </div>
+    <div class="system-card stack">
+      <span>Tech Stack</span>
+      <p>Rust · Axum · SQLx · MySQL · Redis · Docker · Nginx · WebSocket · React · React Native</p>
     </div>
   </div>
 </section>
 
 <section class="role-grid" aria-label="Positioning">
   <article>
+    <div class="role-icon">⚑</div>
     <h2>Founder</h2>
-    <p>Built and scaled products, teams, and operations, including MyLivePage reaching millions of users.</p>
+    <h3>built and scaled products</h3>
+    <p>Founded and grew MyLivePage to 10M users and 20M page views per day. Built teams, processes, and infrastructure to handle real-world scale.</p>
   </article>
   <article>
+    <div class="role-icon">⬡</div>
     <h2>CTO</h2>
-    <p>Owns architecture, delivery, infrastructure, deployment, and the technical shape of the product.</p>
+    <h3>owns architecture and delivery</h3>
+    <p>Designs systems that are reliable, observable, and cost-efficient. From requirements to production, including infrastructure, security, and performance.</p>
   </article>
   <article>
+    <div class="role-icon">&lt;/&gt;</div>
     <h2>Principal Developer</h2>
-    <p>Still writes production systems in Rust, React, Electron, Axum, SQLX, Docker, and related tooling.</p>
+    <h3>writes production systems</h3>
+    <p>Deep in the code: Rust, backend, desktop, mobile, and integrations. Ships features, fixes hard bugs, and makes complex things work.</p>
   </article>
 </section>
 
