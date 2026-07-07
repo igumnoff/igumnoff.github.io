@@ -664,6 +664,24 @@ a {
   border-top: 1px solid var(--line);
 }
 
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.footer-nav a {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-dark);
+}
+
 @media (max-width: 860px) {
   .hero,
   .role-grid,
