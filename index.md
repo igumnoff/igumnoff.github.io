@@ -33,13 +33,13 @@ permalink: /
 
 <section class="role-grid" aria-label="Positioning">
   <article>
-    <div class="role-icon">Founder</div>
+    <div class="role-icon role-icon-founder" aria-hidden="true"></div>
     <h2>Founder</h2>
     <h3>built and scaled products</h3>
     <p>Founded and grew MyLivePage to 10M users and 20M page views per day. Built teams, processes, and infrastructure to handle real-world scale.</p>
   </article>
   <article>
-    <div class="role-icon">CTO</div>
+    <div class="role-icon role-icon-cto" aria-hidden="true"></div>
     <h2>CTO</h2>
     <h3>owns architecture and delivery</h3>
     <p>Designs systems that are reliable, observable, and cost-efficient. From requirements to production, including infrastructure, security, and performance.</p>

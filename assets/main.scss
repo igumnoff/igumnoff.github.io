@@ -247,9 +247,61 @@ a {
 
 .role-icon {
   color: var(--accent-dark);
-  font-size: 38px;
-  line-height: 1;
+  height: 44px;
   margin-bottom: 18px;
+  position: relative;
+  width: 54px;
+}
+
+.role-icon-founder::before {
+  border: 2px solid var(--accent-dark);
+  border-top: 0;
+  bottom: 0;
+  content: "";
+  height: 24px;
+  left: 8px;
+  position: absolute;
+  transform: skewX(-18deg);
+  width: 34px;
+}
+
+.role-icon-founder::after {
+  border-left: 2px solid var(--accent-dark);
+  border-top: 2px solid var(--accent-dark);
+  content: "";
+  height: 16px;
+  left: 24px;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.role-icon-cto {
+  border: 2px solid var(--accent-dark);
+  border-radius: 8px;
+  height: 42px;
+  width: 42px;
+}
+
+.role-icon-cto::before,
+.role-icon-cto::after {
+  background: var(--accent-dark);
+  content: "";
+  position: absolute;
+}
+
+.role-icon-cto::before {
+  height: 2px;
+  left: 9px;
+  top: 13px;
+  width: 20px;
+}
+
+.role-icon-cto::after {
+  height: 18px;
+  left: 18px;
+  top: 9px;
+  width: 2px;
 }
 
 .role-grid h2,
