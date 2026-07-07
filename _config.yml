@@ -21,9 +21,12 @@
 title: Igumnoff
 email: igumnovnsk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Development Sole Proprietorship specializing in the Rust language
+  Founder/CTO and principal software developer building Rust, AI, document, and high-load systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+header_pages:
+  - blog.md
+  - about.md
 #twitter_username: jekyllrb
 #github_username:  jekyll
 

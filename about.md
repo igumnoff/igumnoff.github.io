@@ -4,11 +4,13 @@ title: About
 permalink: /about
 ---
 
-<img src="https://relayna.com/assets/evgeny-Q9DvfhWx.webp" alt="Evgeny Igumnov" align="right" width="180" />
+<img class="about-portrait" src="/assets/img/evgeny-business.png" alt="Evgeny Igumnov" align="right" width="220" />
 
 ## Evgeny Igumnov
 
-Principal software developer specializing in Rust, backend systems, and AI-assisted software engineering with Codex and Claude Code.
+Founder/CTO and principal software developer specializing in Rust, backend systems, AI-assisted software engineering, document engines, and production infrastructure.
+
+I work at the intersection of company building and deep technical execution: product architecture, backend systems, local-first AI assistant runtimes, deployment, and hands-on production code.
 
 Location: Kazakhstan, Astana
 
