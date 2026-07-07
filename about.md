@@ -4,91 +4,162 @@ title: About
 permalink: /about
 ---
 
-<img class="about-portrait" src="/assets/img/evgeny-business.png" alt="Evgeny Igumnov" align="right" width="220" />
+<section class="about-hero">
+  <div class="about-hero-copy">
+    <p class="eyebrow">About</p>
+    <h1>Evgeny Igumnov</h1>
+    <p class="about-lead">
+      Founder/CTO and principal software developer building Rust, AI assistant,
+      document, backend, and high-load systems from architecture to production.
+    </p>
+    <p>
+      I work at the intersection of company building and deep technical execution:
+      product architecture, local-first AI assistant runtimes, backend services,
+      infrastructure, deployment automation, and hands-on production code.
+    </p>
+  </div>
+  <div class="about-photo-card">
+    <img src="/assets/img/evgeny-business.png" alt="Evgeny Igumnov">
+    <div>
+      <strong>Astana, Kazakhstan</strong>
+      <span>Founder / CTO / Principal Software Developer</span>
+    </div>
+  </div>
+</section>
 
-## Evgeny Igumnov
+<section class="about-contact">
+  <a href="mailto:evgeny@relayna.com">evgeny@relayna.com</a>
+  <a href="https://t.me/ievkz">Telegram @ievkz</a>
+  <a href="https://github.com/evgenyigumnov">GitHub</a>
+  <a href="https://www.linkedin.com/in/evgeny-igumnov-5121841/">LinkedIn</a>
+  <a href="https://habr.com/ru/users/igumnov/articles/">Habr</a>
+  <a href="https://www.reddit.com/user/ievkz/">Reddit</a>
+  <a href="https://www.litres.ru/author/evgeniy-valerevich-igumnov/">Books</a>
+</section>
 
-Founder/CTO and principal software developer specializing in Rust, backend systems, AI-assisted software engineering, document engines, and production infrastructure.
+<section class="about-stats">
+  <article>
+    <strong>10M</strong>
+    <span>MyLivePage users</span>
+  </article>
+  <article>
+    <strong>20M+</strong>
+    <span>page views per day</span>
+  </article>
+  <article>
+    <strong>25+ years</strong>
+    <span>software engineering</span>
+  </article>
+  <article>
+    <strong>Rust / AI</strong>
+    <span>current technical focus</span>
+  </article>
+</section>
 
-I work at the intersection of company building and deep technical execution: product architecture, backend systems, local-first AI assistant runtimes, deployment, and hands-on production code.
+<section class="about-section">
+  <div class="section-heading">
+    <p class="eyebrow">Current focus</p>
+    <h2>Technical leadership with hands-on execution.</h2>
+  </div>
+  <div class="about-focus-grid">
+    <article>
+      <h3>Founder / CTO</h3>
+      <p>Building Relayna as an AI assistant platform across desktop, web, cloud, and mobile.</p>
+    </article>
+    <article>
+      <h3>Principal Developer</h3>
+      <p>Designing and shipping Rust, backend, document, AI tooling, and infrastructure systems.</p>
+    </article>
+    <article>
+      <h3>High-load experience</h3>
+      <p>Scaled MyLivePage to millions of users with practical performance engineering and operations.</p>
+    </article>
+  </div>
+</section>
 
-Location: Kazakhstan, Astana
+<section class="about-section">
+  <div class="section-heading">
+    <p class="eyebrow">Experience</p>
+    <h2>Built products, platforms, and production systems.</h2>
+  </div>
 
-Telegram: @ievkz
+  <div class="timeline">
+    <article>
+      <div class="timeline-meta">
+        <strong>Relayna Inc, USA</strong>
+        <span>March 2026 - Present</span>
+      </div>
+      <div class="timeline-body">
+        <h3>CTO / CEO / Principal Software Developer</h3>
+        <p>Founded and led development of <a href="https://relayna.com">Relayna</a>, an AI assistant platform for desktop, web, cloud, and mobile.</p>
+        <p>Designed and built the core architecture with Electron, React, Rust, Axum, SQLx, MySQL, WebSocket, REST API, Docker, and React Native/Expo.</p>
+        <p>Implemented local-first AI assistant runtime, multi-step reasoning, tool execution, background tasks, provider-based LLM integration, tracing, and production infrastructure.</p>
+      </div>
+    </article>
 
-E-mail: evgeny@relayna.com
+    <article>
+      <div class="timeline-meta">
+        <strong>Jetico, Finland</strong>
+        <span>September 2020 - Present</span>
+      </div>
+      <div class="timeline-body">
+        <h3>Principal Rust Developer</h3>
+        <p>Work in an AI-assisted development workflow using Codex and Claude Code while maintaining production-level quality standards.</p>
+        <p>Implemented an adaptive open-set text-classification training pipeline in Rust using Candle/CUDA with threshold calibration, reproducible JSON bundles, and evaluation tooling.</p>
+        <p>Developed document search/indexing systems and activation license services using Rust, Actix, Tokio, SeaORM, SQLite, Diesel, and MySQL.</p>
+      </div>
+    </article>
 
-Reddit: [https://www.reddit.com/user/ievkz/](https://www.reddit.com/user/ievkz/)
+    <article>
+      <div class="timeline-meta">
+        <strong>Jetico, Finland</strong>
+        <span>September 2014 - August 2020</span>
+      </div>
+      <div class="timeline-body">
+        <h3>Principal Java / Scala / Angular Developer</h3>
+        <p>Built and maintained enterprise systems including Jetico Central Manager, TotalWipeOut server, Jetico Messenger server, and License Generator.</p>
+        <p>Worked with Scala, Java, TypeScript, Spring, Hibernate, Akka, Slick, Angular, Docker, and Kubernetes.</p>
+      </div>
+    </article>
 
-Habr: [https://habr.com/ru/users/igumnov/articles/](https://habr.com/ru/users/igumnov/articles/)
+    <article>
+      <div class="timeline-meta">
+        <strong>MyLivePage, USA</strong>
+        <span>January 2007 - August 2014</span>
+      </div>
+      <div class="timeline-body">
+        <h3>Founder / Senior PHP Developer / High-load Expert</h3>
+        <p>Managed and built the company departments, developed the core CMS, and optimized the platform for high-load environments.</p>
+        <p>Scaled the website builder to 10 million users and more than 20 million page views per day using Linux, PHP, Lighttpd, MySQL, and Memcached.</p>
+      </div>
+    </article>
 
-Books: [https://www.litres.ru/author/evgeniy-valerevich-igumnov/](https://www.litres.ru/author/evgeniy-valerevich-igumnov/)
+    <article>
+      <div class="timeline-meta">
+        <strong>Geocad, Russia</strong>
+        <span>February 2001 - December 2006</span>
+      </div>
+      <div class="timeline-body">
+        <h3>Principal Java Developer</h3>
+        <p>Worked on backend development, database structure design, performance tuning, and technical architecture.</p>
+      </div>
+    </article>
 
-GitHub: [https://github.com/evgenyigumnov](https://github.com/evgenyigumnov)
+    <article>
+      <div class="timeline-meta">
+        <strong>Le Petit Fute, France</strong>
+        <span>September 1996 - January 2001</span>
+      </div>
+      <div class="timeline-body">
+        <h3>Perl Developer</h3>
+        <p>Developed websites and designed database structures.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-LinkedIn: [https://www.linkedin.com/in/evgeny-igumnov-5121841/](https://www.linkedin.com/in/evgeny-igumnov-5121841/)
-
-Instagram: [https://www.instagram.com/secretnsk](https://www.instagram.com/secretnsk) (travel, lifestyle, etc.)
-
-
-<div style="clear: both;"></div>
-
-## Achievements
-
-MyLivePage Service – Website Builder: Successfully scaled to 10 million users with over 20 million page views per day. Stack: Linux, PHP, Lighttpd, MySQL, Memcached.
-
-## Work experience
-
-### Relayna Inc, USA. March 2026 — Present.  CTO/CEO/Principal Software Developer/Desktop & Backend Developer
-
-Founded and led development of [Relayna](https://relayna.com), an AI assistant platform for desktop, web, cloud, and mobile.
-
-Designed and built the core architecture using **Electron, React, Rust, Axum, SQLX, MySQL, WebSocket, REST API, Docker, and React Native/Expo**.
-
-Implemented a local-first AI assistant runtime with multi-step reasoning, tool execution, background tasks, provider-based LLM integration, local/cloud configuration, and execution tracing.
-
-Built the desktop app, cloud/container runtime, backend services, public web app, mobile client foundation, and integrations for Gmail/Google, IMAP/SMTP, file operations, document processing, URL extraction, browser automation, and speech recognition with faster-whisper.
-
-Managed production infrastructure including Docker images, Docker Swarm, Nginx, TLS, DNS, mail server setup, deployment automation, and repository engineering standards.
-
-### Jetico, Finland. September 2020 — Present. Principal Rust Developer.
-
-Work in an AI-assisted development workflow using Codex and Claude Code for codebase navigation, implementation, refactoring, debugging, and test generation, while maintaining production-level quality standards.
-
-Implemented an adaptive open-set text-classification training pipeline in Rust using Candle/CUDA, including Linear Head training with stratified splits, per-class TPR-based threshold calibration, iterative fine-tuning with snapshotting, best-model selection by min(total_errors), and reproducible JSON bundle save/evaluate with confusion matrix and open-set accuracy.
-
-Developed a document search and indexing engine in Rust using Actix, Tokio, SeaORM, and SQLite.
-
-Built an activation license server in Rust using Actix-Web, Diesel, and MySQL.
-
-### Jetico, Finland. September 2014 — August 2020. Principal Java/Scala/Angular Developer.
-
-Developed Jetico Central Manager server using Scala, TypeScript, Spring Framework, Hibernate, and Angular.
-
-Created the TotalWipeOut server using Java, TypeScript, Spring Framework, Hibernate, and Angular.
-
-Developed Jetico Messenger server using Scala, Akka, Slick, TypeScript, Angular, Docker, and Kubernetes.
-
-Built a License Generator using Scala, Play Framework, and Slick.
-
-### MyLivePage, USA. January 2007 — August 2014. Founder, Senior PHP Developer, Highload Expert.
-
-Managed and built all departments of the company.
-
-Developed the core CMS in PHP and optimized it for high-load environments.
-
-Provided expertise in SQL optimization, caching, and performance improvements.
-
-### Geocad, Russia. February 2001 — December 2006. Principal Java Developer.
-
-Worked on backend development and database structure design.
-
-Provided performance tuning and technical expertise.
-
-### Le Petit Fute, France. September 1996 — January 2001. Perl Developer.
-
-Developed websites and designed database structures.
-
-## Education
-
-Master of Computer Science, Novosibirsk State Technical University. 1996–2002. Faculty of Automation and Computer Engineering, Software Development.
+<section class="about-section education-card">
+  <p class="eyebrow">Education</p>
+  <h2>Master of Computer Science</h2>
+  <p>Novosibirsk State Technical University, Faculty of Automation and Computer Engineering, Software Development. 1996-2002.</p>
+</section>
