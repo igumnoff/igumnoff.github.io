@@ -25,69 +25,57 @@ permalink: /
       <span><b>J</b> Jetico:<br>Principal Rust Developer</span>
     </div>
     <div class="hero-actions">
-      <a class="button button-primary" href="#work">View technical work <span>→</span></a>
-      <a class="button button-secondary" href="{{ "/blog" | relative_url }}">Read engineering notes <span>→</span></a>
+      <a class="button button-primary" href="#work">View technical work <span>&rarr;</span></a>
+      <a class="button button-secondary" href="{{ "/blog" | relative_url }}">Read engineering notes <span>&rarr;</span></a>
     </div>
   </div>
 
   <div class="hero-system" aria-label="Technical architecture preview">
-    <div class="system-card architecture">
-      <span>System Architecture</span>
-      <div class="arch-box">Web / Desktop / Mobile</div>
-      <div class="arch-line"></div>
-      <div class="arch-row">
-        <i>AI Orchestrator</i><i>Tools & Integrations</i><i>Background Workers</i>
+    <div class="system-panel">
+      <div class="system-panel-header">
+        <span>Relayna-style platform architecture</span>
+        <b>Production</b>
       </div>
-      <div class="arch-row">
-        <i>Data Layer</i><i>Object Storage</i>
+      <div class="system-diagram">
+        <div class="diagram-node top">Desktop / Web / Mobile</div>
+        <div class="diagram-node wide">API Gateway</div>
+        <div class="diagram-row">
+          <div class="diagram-node">AI Runtime</div>
+          <div class="diagram-node">Tool Execution</div>
+          <div class="diagram-node">Background Jobs</div>
+        </div>
+        <div class="diagram-row">
+          <div class="diagram-node">Rust Services</div>
+          <div class="diagram-node">SQLx / MySQL</div>
+          <div class="diagram-node">Docker / Nginx</div>
+        </div>
       </div>
-    </div>
-    <div class="system-card code">
-      <span>Rust / Axum</span>
-      <pre>use axum::{routing::post, Json, Router};
-use serde::{Deserialize, Serialize};
-
-#[derive(Deserialize)]
-struct Prompt { prompt: String }
-
-async fn handle_prompt(Json(payload): Json&lt;Prompt&gt;) {
-    // orchestrate tools and response
-}</pre>
-    </div>
-    <div class="system-card trace">
-      <span>AI Reasoning Trace</span>
-      <p>✓ Received user request <em>120ms</em></p>
-      <p>✓ Analyze intent <em>210ms</em></p>
-      <p>✓ Select tools <em>260ms</em></p>
-      <p>✓ Synthesize answer <em>310ms</em></p>
-    </div>
-    <div class="system-card deploy">
-      <span>Deployment</span>
-      <p>● API Service <b>Healthy</b></p>
-      <p>● Web App <b>Healthy</b></p>
-      <p>● Worker Service <b>Healthy</b></p>
-      <p>● DB / Redis <b>Healthy</b></p>
-    </div>
-    <div class="system-card traffic">
-      <span>Traffic (RPS)</span>
-      <div class="sparkline"></div>
-    </div>
-    <div class="system-card stack">
-      <span>Tech Stack</span>
-      <p>Rust · Axum · SQLx · MySQL · Redis · Docker · Nginx · WebSocket · React · React Native</p>
+      <div class="system-status">
+        <div>
+          <strong>Runtime</strong>
+          <span>Multi-step reasoning, tracing, provider-based LLMs.</span>
+        </div>
+        <div>
+          <strong>Infrastructure</strong>
+          <span>Docker Swarm, TLS, DNS, deployment automation.</span>
+        </div>
+      </div>
+      <div class="system-stack">
+        Rust / Axum / SQLx / MySQL / Redis / Docker / Nginx / WebSocket / React / React Native
+      </div>
     </div>
   </div>
 </section>
 
 <section class="role-grid" aria-label="Positioning">
   <article>
-    <div class="role-icon">⚑</div>
+    <div class="role-icon">Founder</div>
     <h2>Founder</h2>
     <h3>built and scaled products</h3>
     <p>Founded and grew MyLivePage to 10M users and 20M page views per day. Built teams, processes, and infrastructure to handle real-world scale.</p>
   </article>
   <article>
-    <div class="role-icon">⬡</div>
+    <div class="role-icon">CTO</div>
     <h2>CTO</h2>
     <h3>owns architecture and delivery</h3>
     <p>Designs systems that are reliable, observable, and cost-efficient. From requirements to production, including infrastructure, security, and performance.</p>

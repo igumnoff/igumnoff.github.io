@@ -217,116 +217,109 @@ a {
 }
 
 .hero-system {
+  align-items: stretch;
+  display: flex;
+}
+
+.system-panel {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(32, 199, 201, 0.18), transparent 32%),
+    linear-gradient(135deg, #101827, #172033);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 10px;
+  box-shadow: 0 24px 55px rgba(17, 24, 39, 0.22);
+  color: #e5edf8;
   display: grid;
-  gap: 6px;
-  grid-template-columns: 1fr 1.3fr 1.05fr;
-  grid-template-rows: auto auto auto;
+  gap: 18px;
+  min-height: 100%;
+  padding: 22px;
+  width: 100%;
 }
 
-.system-card {
-  background: #111827;
-  border: 1px solid #475569;
-  border-radius: 6px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+.system-panel-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.system-panel-header span {
   color: #dbeafe;
-  font-size: 11px;
-  min-height: 86px;
-  overflow: hidden;
-  padding: 10px;
+  font-size: 13px;
+  font-weight: 800;
 }
 
-.system-card span {
-  color: #cbd5e1;
-  display: block;
-  font-size: 10px;
-  margin-bottom: 8px;
-}
-
-.system-card p {
-  color: #cbd5e1;
-  font-size: 10px;
-  line-height: 1.35;
-  margin: 4px 0;
-}
-
-.system-card em {
-  color: #94a3b8;
-  float: right;
-  font-style: normal;
-}
-
-.system-card b {
+.system-panel-header b {
+  background: rgba(34, 197, 94, 0.14);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  border-radius: 999px;
   color: #86efac;
-  float: right;
+  font-size: 11px;
+  padding: 5px 9px;
 }
 
-.architecture {
-  grid-column: span 2;
+.system-diagram {
+  display: grid;
+  gap: 10px;
 }
 
-.code {
-  grid-row: span 2;
+.diagram-row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.trace,
-.deploy,
-.traffic {
-  min-height: 126px;
-}
-
-.stack {
-  grid-column: 1 / -1;
-  min-height: auto;
-}
-
-.stack p {
-  color: #dbeafe;
-  margin: 0;
-}
-
-.code pre {
-  color: #dbeafe;
-  font-size: 10px;
-  line-height: 1.45;
-  margin: 0;
-  white-space: pre-wrap;
-}
-
-.arch-box,
-.arch-row i {
-  border: 1px solid #475569;
-  border-radius: 4px;
-  color: #cbd5e1;
-  display: block;
-  font-style: normal;
-  padding: 8px;
+.diagram-node {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 13px 10px;
   text-align: center;
 }
 
-.arch-line {
-  background: #64748b;
-  height: 18px;
-  margin: 0 auto;
-  width: 1px;
+.diagram-node.top,
+.diagram-node.wide {
+  color: #fff;
 }
 
-.arch-row {
+.system-status {
   display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 8px;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.arch-row:last-child {
-  grid-template-columns: repeat(2, 1fr);
+.system-status div {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 12px;
 }
 
-.sparkline {
-  background:
-    linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(135deg, transparent 0 12%, #20c7c9 12% 14%, transparent 14% 26%, #20c7c9 26% 29%, transparent 29% 45%, #20c7c9 45% 48%, transparent 48% 62%, #20c7c9 62% 65%, transparent 65% 78%, #20c7c9 78% 82%, transparent 82%);
-  height: 82px;
+.system-status strong,
+.system-status span {
+  display: block;
+}
+
+.system-status strong {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.system-status span {
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.system-stack {
+  border-top: 1px solid rgba(148, 163, 184, 0.24);
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-top: 14px;
 }
 
 .role-grid,
@@ -531,14 +524,7 @@ a {
   }
 
   .hero-system {
-    grid-template-columns: 1fr;
-  }
-
-  .architecture,
-  .code,
-  .stack {
-    grid-column: auto;
-    grid-row: auto;
+    width: 100%;
   }
 
   .hero {
@@ -555,6 +541,11 @@ a {
   }
 
   .writing-item {
+    grid-template-columns: 1fr;
+  }
+
+  .system-status,
+  .diagram-row {
     grid-template-columns: 1fr;
   }
 }
