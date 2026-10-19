@@ -9,15 +9,15 @@ permalink: /
     <img src="{{ "/assets/img/evgeny-business.png" | relative_url }}" alt="Evgeny Igumnov">
     <div class="portrait-card">
       <strong>Evgeny Igumnov</strong>
-      <span>Founder • CTO • Principal Software Developer</span>
+      <span>Software Developer · Rust · AI · Backend</span>
     </div>
   </div>
 
   <div class="hero-copy">
-    <h1>Founder/CTO who still builds the system.</h1>
+    <h1>Software developer who builds systems end to end.</h1>
     <p class="lead">
-      Rust, AI assistants, document engines, high-load platforms, and production
-      infrastructure from architecture to launch.
+      Hands-on engineering across Rust, AI assistants, document systems,
+      high-load platforms, and production infrastructure.
     </p>
     <div class="proof-row" aria-label="Career highlights">
       <span><b>M</b> MyLivePage:<br>10M users / 20M page views per day</span>
@@ -31,21 +31,21 @@ permalink: /
   </div>
 </section>
 
-<section class="role-grid" aria-label="Positioning">
+<section class="role-grid" aria-label="Engineering focus">
   <article>
-    <h2>Founder</h2>
-    <h3>built and scaled products</h3>
-    <p>Founded and grew MyLivePage to 10M users and 20M page views per day. Built teams, processes, and infrastructure to handle real-world scale.</p>
+    <h2>Rust &amp; backend</h2>
+    <h3>production-grade systems</h3>
+    <p>Builds services, document engines, and infrastructure with a focus on performance, reliability, and maintainability.</p>
   </article>
   <article>
-    <h2>CTO</h2>
-    <h3>owns architecture and delivery</h3>
-    <p>Designs systems that are reliable, observable, and cost-efficient. From requirements to production, including infrastructure, security, and performance.</p>
+    <h2>AI engineering</h2>
+    <h3>from models to useful products</h3>
+    <p>Implements AI assistants, inference integrations, tool execution, semantic search, and local-first workflows.</p>
   </article>
   <article>
-    <h2>Principal Developer</h2>
-    <h3>writes production systems</h3>
-    <p>Deep in the code: Rust, backend, desktop, mobile, and integrations. Ships features, fixes hard bugs, and makes complex things work.</p>
+    <h2>Hands-on delivery</h2>
+    <h3>designs, codes, ships</h3>
+    <p>Works across architecture and implementation, staying close to the code through testing, deployment, and production operations.</p>
   </article>
 </section>
 

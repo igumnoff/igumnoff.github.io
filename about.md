@@ -9,26 +9,26 @@ permalink: /about
     <p class="eyebrow">About</p>
     <h1>Evgeny Igumnov</h1>
     <p class="about-lead">
-      Founder/CTO and principal software developer building Rust, AI assistant,
-      document, backend, and high-load systems from architecture to production.
+      Software developer focused on Rust, AI assistants, document systems,
+      backend engineering, and high-load platforms—from architecture to production.
     </p>
     <p>
-      I work at the intersection of company building and deep technical execution:
-      product architecture, local-first AI assistant runtimes, backend services,
-      infrastructure, deployment automation, and hands-on production code.
+      I’m first and foremost a hands-on software developer. I design and build
+      production systems: Rust services, AI runtimes, backend platforms,
+      infrastructure, and deployment automation.
     </p>
   </div>
   <div class="about-photo-card">
     <img src="/assets/img/evgeny-business.png" alt="Evgeny Igumnov">
     <div>
       <strong>Astana, Kazakhstan</strong>
-      <span>Founder / CTO / Principal Software Developer</span>
+      <span>Software Developer · Rust · AI · Backend</span>
     </div>
   </div>
 </section>
 
 <section class="about-contact">
-  <a href="mailto:evgeny@relayna.com">evgeny@relayna.com</a>
+  <a href="mailto:igumnovnsk@gmail.com">igumnovnsk@gmail.com</a>
   <a href="https://t.me/ievkz">Telegram @ievkz</a>
   <a href="https://github.com/evgenyigumnov">GitHub</a>
   <a href="https://www.linkedin.com/in/evgeny-igumnov-5121841/">LinkedIn</a>
@@ -60,12 +60,12 @@ permalink: /about
 <section class="about-section">
   <div class="section-heading">
     <p class="eyebrow">Current focus</p>
-    <h2>Technical leadership with hands-on execution.</h2>
+    <h2>Hands-on software engineering, from design to production.</h2>
   </div>
   <div class="about-focus-grid">
     <article>
-      <h3>Founder / CTO</h3>
-      <p>Founded and led Relayna, an AI assistant platform across desktop, web, cloud, and mobile.</p>
+      <h3>Software engineering</h3>
+      <p>Builds and ships Rust, backend, AI, document, and infrastructure systems.</p>
     </article>
     <article>
       <h3>Principal Developer</h3>
@@ -91,8 +91,8 @@ permalink: /about
         <span>March 2026 - October 2026</span>
       </div>
       <div class="timeline-body">
-        <h3>CTO / CEO / Principal Software Developer</h3>
-        <p>Founded and led the development of <a href="https://relayna.com">Relayna</a>, an agentic AI assistant platform for desktop, web, cloud, and mobile.</p>
+        <h3>Founder / Executive Lead / Software Developer</h3>
+        <p>Founded <a href="https://relayna.com">Relayna</a> and remained hands-on building its agentic AI assistant platform for desktop, web, cloud, and mobile.</p>
         <ul>
           <li>Architected an AI runtime that turns model responses into multi-step workflows: selecting tools, executing actions, incorporating results, and producing a final response.</li>
           <li>Built a flexible inference layer supporting multiple LLM providers, model-specific capabilities, and both local and cloud configurations.</li>
