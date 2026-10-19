@@ -14,10 +14,10 @@ permalink: /
   </div>
 
   <div class="hero-copy">
-    <h1>Software developer who builds systems end to end.</h1>
+    <h1>Principal Rust Developer at Jetico</h1>
     <p class="lead">
-      Hands-on engineering across Rust, AI assistants, document systems,
-      high-load platforms, and production infrastructure.
+      AI Agents &amp; LLM Systems Engineer building production software across
+      Rust, AI assistants, document systems, and backend infrastructure.
     </p>
     <div class="proof-row" aria-label="Career highlights">
       <span><b>M</b> MyLivePage:<br>10M users / 20M page views per day</span>
