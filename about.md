@@ -13,7 +13,7 @@ permalink: /about
       backend engineering, and high-load platforms from architecture to production.
     </p>
     <p>
-      IвЂ™m first and foremost a hands-on software developer. I design and build
+      I'm first and foremost a hands-on software developer. I design and build
       production systems: Rust services, AI runtimes, backend platforms,
       infrastructure, and deployment automation.
     </p>
