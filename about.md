@@ -10,10 +10,10 @@ permalink: /about
     <h1>Evgeny Igumnov</h1>
     <p class="about-lead">
       Software developer focused on Rust, AI assistants, document systems,
-      backend engineering, and high-load platforms—from architecture to production.
+      backend engineering, and high-load platformsвЂ”from architecture to production.
     </p>
     <p>
-      I’m first and foremost a hands-on software developer. I design and build
+      IвЂ™m first and foremost a hands-on software developer. I design and build
       production systems: Rust services, AI runtimes, backend platforms,
       infrastructure, and deployment automation.
     </p>
@@ -22,7 +22,7 @@ permalink: /about
     <img src="/assets/img/evgeny-business.png" alt="Evgeny Igumnov">
     <div>
       <strong>Astana, Kazakhstan</strong>
-      <span>Software Developer · Rust · AI · Backend</span>
+      <span>Software Developer В· Rust В· AI В· Backend</span>
     </div>
   </div>
 </section>
@@ -87,26 +87,6 @@ permalink: /about
   <div class="timeline">
     <article>
       <div class="timeline-meta">
-        <strong>Relayna Inc, USA</strong>
-        <span>March 2026 - October 2026</span>
-      </div>
-      <div class="timeline-body">
-        <h3>Founder / Executive Lead / Software Developer</h3>
-        <p>Founded <a href="https://relayna.com">Relayna</a> and remained hands-on building its agentic AI assistant platform for desktop, web, cloud, and mobile.</p>
-        <ul>
-          <li>Architected an AI runtime that turns model responses into multi-step workflows: selecting tools, executing actions, incorporating results, and producing a final response.</li>
-          <li>Built a flexible inference layer supporting multiple LLM providers, model-specific capabilities, and both local and cloud configurations.</li>
-          <li>Developed grounded AI workflows across email, documents, web browsing, browser automation, files, and productivity integrations, with execution traces for transparency.</li>
-          <li>Implemented semantic document search using embeddings, with support for local and remote embedding models across user files and Google Drive sources.</li>
-          <li>Added vision-powered image understanding and local speech transcription to support multimodal assistant workflows.</li>
-          <li>Designed safeguards around tool execution, permissions, confirmations, and real-world actions.</li>
-          <li>Led the development of the product across desktop, cloud runtime, backend, web, and mobile, and managed its production deployment infrastructure.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article>
-      <div class="timeline-meta">
         <strong>Jetico, Finland</strong>
         <span>September 2020 - Present</span>
       </div>
@@ -115,6 +95,20 @@ permalink: /about
         <p>Work in an AI-assisted development workflow using Codex and Claude Code while maintaining production-level quality standards.</p>
         <p>Implemented an adaptive open-set text-classification training pipeline in Rust using Candle/CUDA with threshold calibration, reproducible JSON bundles, and evaluation tooling.</p>
         <p>Developed document search/indexing systems and activation license services using Rust, Actix, Tokio, SeaORM, SQLite, Diesel, and MySQL.</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="timeline-meta">
+        <strong>Relayna Inc, USA</strong>
+        <span>March 2026 - October 2026</span>
+      </div>
+      <div class="timeline-body">
+        <h3>Founder / Executive Lead / Software Developer</h3>
+        <p>Founded <a href="https://relayna.com">Relayna</a> and remained hands-on building its agentic AI assistant platform for desktop, web, cloud, and mobile.</p>
+        <p>Architected an AI runtime that turns model responses into multi-step workflows, with support for multiple LLM providers and both local and cloud configurations.</p>
+        <p>Built AI workflows across email, documents, web browsing, browser automation, files, and productivity integrations. Implemented semantic document search, vision-powered image understanding, and local speech transcription.</p>
+        <p>Designed safeguards for tool execution, permissions, and real-world actions. Developed the product across desktop, cloud runtime, backend, web, and mobile, and managed its production infrastructure.</p>
       </div>
     </article>
 

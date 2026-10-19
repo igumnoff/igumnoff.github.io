@@ -8,23 +8,23 @@ image: /assets/img/posts/telegram-qdrant-agent.jpg
 
 The idea for this pet project came from my desire to build my own AI agent. I established minimal technical requirements for myself: the agent should have multiple states, be able to launch tools, and use RAG (Retrieval Augmented Generation) to search for answers.
 
-Ultimately, I decided to create a personal Telegram AI bot that can remember the information I need, and whenever I want, I can ask it what it has retained. It’s like a notebook, only this is an AI-powered notebook that can answer questions. Additionally, I wanted it to be able to execute commands on a server—commands described in human language that it would translate into terminal commands.
+Ultimately, I decided to create a personal Telegram AI bot that can remember the information I need, and whenever I want, I can ask it what it has retained. ItвЂ™s like a notebook, only this is an AI-powered notebook that can answer questions. Additionally, I wanted it to be able to execute commands on a serverвЂ”commands described in human language that it would translate into terminal commands.
 
-Initially, I considered using LangChain. It’s a great tool—it supports connecting vector databases, using various LLMs for both inference and embedding, and defining the agent’s logic through a state graph. Ready-made tools can be called as well. At first glance, everything seems convenient and simple, especially when you look at typical and straightforward examples.
+Initially, I considered using LangChain. ItвЂ™s a great toolвЂ”it supports connecting vector databases, using various LLMs for both inference and embedding, and defining the agentвЂ™s logic through a state graph. Ready-made tools can be called as well. At first glance, everything seems convenient and simple, especially when you look at typical and straightforward examples.
 
-However, after digging a bit deeper, I found that the effort required to learn this framework wasn’t justified. It’s simpler to directly call LLMs, embeddings, and Qdrant via REST API. Plus, you can describe the agent’s logic in code using an `enum` to represent states and performing a `match` on these states.
+However, after digging a bit deeper, I found that the effort required to learn this framework wasnвЂ™t justified. ItвЂ™s simpler to directly call LLMs, embeddings, and Qdrant via REST API. Plus, you can describe the agentвЂ™s logic in code using an `enum` to represent states and performing a `match` on these states.
 
-Moreover, LangChain was originally written in Python. I prefer coding in Rust, and using a Rust version of LangChain turns out to be a dubious pleasure—usually running into issues at the most inconvenient moments when some component hasn’t yet been rewritten in Rust.
+Moreover, LangChain was originally written in Python. I prefer coding in Rust, and using a Rust version of LangChain turns out to be a dubious pleasureвЂ”usually running into issues at the most inconvenient moments when some component hasnвЂ™t yet been rewritten in Rust.
 
-For implementing the RAG magic, I decided to use the following algorithm: When the user asks a question, key words are extracted from the query using an LLM. Then, an embedding is used to compute a vector from these key words. This vector is sent to Qdrant to search for the nearest vectors from the documents already stored. After that, a query is formed for the LLM using the found documents along with the user’s question. The result is an LLM-generated answer that takes into account the data that is semantically close to the question. Accordingly, when the user provides information to the bot, it is saved in Qdrant with an associated vector computed via embedding. In other words, vectors with similar meanings have minimal distances between each other. This is how the search for semantically similar documents works.
+For implementing the RAG magic, I decided to use the following algorithm: When the user asks a question, key words are extracted from the query using an LLM. Then, an embedding is used to compute a vector from these key words. This vector is sent to Qdrant to search for the nearest vectors from the documents already stored. After that, a query is formed for the LLM using the found documents along with the userвЂ™s question. The result is an LLM-generated answer that takes into account the data that is semantically close to the question. Accordingly, when the user provides information to the bot, it is saved in Qdrant with an associated vector computed via embedding. In other words, vectors with similar meanings have minimal distances between each other. This is how the search for semantically similar documents works.
 
 ## Design
 
-First, I devised the overall logic for the AI bot’s operation. The bot responds to user commands by:
+First, I devised the overall logic for the AI botвЂ™s operation. The bot responds to user commands by:
 
 - Checking the password before starting.
 - Understanding what the user wants (a question, a statement, a request to forget, a terminal command, etc.).
-- Working with the Qdrant vector database—it can remember and forget information.
+- Working with the Qdrant vector databaseвЂ”it can remember and forget information.
 - Comprehending commands in a human-like manner and executing them on the server.
 - Accomplishing all of this using a local LLM (via HTTP API requests).
 
@@ -32,7 +32,7 @@ Then, I detailed the scenario for the AI bot's operation:
 
 ### 1. The User Sends a Message in Telegram
 
-The user sends anything to the bot—a question, a fact, a request, a command—anything at all.
+The user sends anything to the botвЂ”a question, a fact, a request, a commandвЂ”anything at all.
 
 The bot receives the message via the Telegram Bot API.
 
@@ -79,8 +79,8 @@ The bot searches for **what exactly needs to be forgotten** using keywords.
 
 It then asks the user to confirm whether it should indeed forget it.
 
-- If **yes** → it deletes the document from Qdrant.
-- If **no** → it leaves it as is.
+- If **yes** в†’ it deletes the document from Qdrant.
+- If **no** в†’ it leaves it as is.
 
 #### Type 4: Terminal Command
 
@@ -88,8 +88,8 @@ The bot asks the LLM to **formulate a command** for Linux based on a description
 
 It then asks the user to confirm whether to execute the command:
 
-- If **yes** → it executes the command using `std::process::Command` and sends the result.
-- If **no** → the command is not executed.
+- If **yes** в†’ it executes the command using `std::process::Command` and sends the result.
+- If **no** в†’ the command is not executed.
 
 #### Type 5: Everything Else
 
@@ -105,8 +105,8 @@ I started writing code for working with LLM and embeddings. Below is a list of f
 Sends a request to a chat LLM (via an OpenAI-compatible API).
 
 **Input:**
-- `system` — the system message (e.g., instructions for the bot).
-- `user` — the user's message.
+- `system` вЂ” the system message (e.g., instructions for the bot).
+- `user` вЂ” the user's message.
 
 **Output:**
 - Returns the model's response as a string.
@@ -118,7 +118,7 @@ Sends a request to a chat LLM (via an OpenAI-compatible API).
 Creates an embedding for the given text using an embedding model.
 
 **Input:**
-- `input` — the text string that needs to be encoded.
+- `input` вЂ” the text string that needs to be encoded.
 
 **Output:**
 - A vector of embedding values `Vec<f32>`.
@@ -197,7 +197,7 @@ Used for confirming the deletion of specific information.
 
 
 
-Then, using the building blocks from `ai.rs` and `qdrant.rs`, I wrote the bot’s logic in [main.rs](https://github.com/evgenyigumnov/ai-agent-telegram-bot/blob/main/src/main.rs):
+Then, using the building blocks from `ai.rs` and `qdrant.rs`, I wrote the botвЂ™s logic in [main.rs](https://github.com/evgenyigumnov/ai-agent-telegram-bot/blob/main/src/main.rs):
 
 ### `main`
 
@@ -222,7 +222,7 @@ enum State {
 The user's Finite State Machine:
 
 1. `AwaitingPassword`: waits for the password input.
-2. `Pending`: main mode – the user is authorized.
+2. `Pending`: main mode вЂ“ the user is authorized.
 3. `ConfirmForget`: confirmation for information deletion.
 4. `ConfirmCommand`: confirmation of command execution.
 
@@ -257,11 +257,11 @@ pub fn exec_pending(message: &str) -> anyhow::Result<(Self, String)>
 
 - It passes the phrase to the LLM and receives an answer: "1", "2", ..., "5".
 - Depending on the digit, it calls the required function:
-    - `1` → `exec_answer`
-    - `2` → `exec_remember`
-    - `3` → `new_forget`
-    - `4` → `new_command`
-    - otherwise → `exec_chat`
+    - `1` в†’ `exec_answer`
+    - `2` в†’ `exec_remember`
+    - `3` в†’ `new_forget`
+    - `4` в†’ `new_command`
+    - otherwise в†’ `exec_chat`
 
 ### `exec_answer`
 
@@ -292,14 +292,14 @@ A simple conversation with the LLM without RAG:
 pub fn exec_chat(message: &str) -> anyhow::Result<(Self, String)>
 ```
 
-### `new_forget` → `exec_forget`
+### `new_forget` в†’ `exec_forget`
 
 Deletion of information from memory:
 
 - `new_forget`: finds the appropriate document based on keywords and asks for confirmation.
 - `exec_forget`: if the user confirms, deletes the document.
 
-### `new_command` → `exec_confirm_command`
+### `new_command` в†’ `exec_confirm_command`
 
 Command execution:
 
@@ -325,8 +325,8 @@ Helper functions:
 ## Docker & Startup
 
 The startup uses [docker-compose.yml](https://github.com/evgenyigumnov/ai-agent-telegram-bot/blob/main/docker-compose.yml). It contains two services:
-- `backend` — the bot itself.
-- `qdrant` — the vector database.
+- `backend` вЂ” the bot itself.
+- `qdrant` вЂ” the vector database.
 
 The [Dockerfile](https://github.com/evgenyigumnov/ai-agent-telegram-bot/blob/main/Dockerfile) builds the Rust project and runs the binary inside a minimal `debian:bullseye`.
 
