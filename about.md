@@ -10,7 +10,7 @@ permalink: /about
     <h1>Evgeny Igumnov</h1>
     <p class="about-lead">
       Software developer focused on Rust, AI assistants, document systems,
-      backend engineering, and high-load platformsвЂ”from architecture to production.
+      backend engineering, and high-load platforms from architecture to production.
     </p>
     <p>
       IвЂ™m first and foremost a hands-on software developer. I design and build
