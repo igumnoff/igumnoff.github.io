@@ -22,7 +22,7 @@ permalink: /about
     <img src="/assets/img/evgeny-business.png" alt="Evgeny Igumnov">
     <div>
       <strong>Astana, Kazakhstan</strong>
-      <span>Software Developer В· Rust В· AI В· Backend</span>
+      <span>Software Developer · Rust · AI · Backend</span>
     </div>
   </div>
 </section>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CBLT вЂ” A Safe, Fast, and Minimalistic Web Server in Rust Programming Language"
+title:  "CBLT — A Safe, Fast, and Minimalistic Web Server in Rust Programming Language"
 date:   2024-11-14 21:12:01 +0500
 categories: rust, web, server, proxy
 image: /assets/img/posts/cblt-web-server.jpg
@@ -138,7 +138,7 @@ Percentage of the requests served within a certain time (ms)
 igumn@lenovo MINGW64 ~/cblt/benchmark/nginx (main)
 $ docker ps
 CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS                  PORTS                                                       NAMES
-37fbf1dac42b   nginx_srv             "/docker-entrypoint.вЂ¦"   2 minutes ago   Up 2 minutes            0.0.0.0:80->80/tcp                                          nginx_srv
+37fbf1dac42b   nginx_srv             "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes            0.0.0.0:80->80/tcp                                          nginx_srv
 
 igumn@lenovo MINGW64 ~/cblt/benchmark/nginx (main)
 $ ab -c 100 -n 300 http://example.com/logo_huge.png

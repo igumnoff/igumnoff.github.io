@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shiva вЂ” Open Source project in Rust for parsing and generating documents of any type"
+title:  "Shiva — Open Source project in Rust for parsing and generating documents of any type"
 date:   2024-04-06 19:30:59 +0500
 categories: rust, parser, pdf
 image: /assets/img/posts/shiva-document-rust.jpg
@@ -194,7 +194,7 @@ fn main() {
 ```
 
 The current status of the project is MVP (Minimum Viable Product). I plan to add support for all document types,
-that Apache Tika supports over the next few years. And IвЂ™ll add more in the near future
+that Apache Tika supports over the next few years. And I’ll add more in the near future
 deep support for PDF documents, since PDF is the most popular document type. I'll also add
 mode of operation as a web service so that I can use my library through the REST API, and not just through the CLI.
 
