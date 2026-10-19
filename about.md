@@ -65,7 +65,7 @@ permalink: /about
   <div class="about-focus-grid">
     <article>
       <h3>Founder / CTO</h3>
-      <p>Building Relayna as an AI assistant platform across desktop, web, cloud, and mobile.</p>
+      <p>Founded and led Relayna, an AI assistant platform across desktop, web, cloud, and mobile.</p>
     </article>
     <article>
       <h3>Principal Developer</h3>
@@ -88,13 +88,20 @@ permalink: /about
     <article>
       <div class="timeline-meta">
         <strong>Relayna Inc, USA</strong>
-        <span>March 2026 - Present</span>
+        <span>March 2026 - October 2026</span>
       </div>
       <div class="timeline-body">
         <h3>CTO / CEO / Principal Software Developer</h3>
-        <p>Founded and led development of <a href="https://relayna.com">Relayna</a>, an AI assistant platform for desktop, web, cloud, and mobile.</p>
-        <p>Designed and built the core architecture with Electron, React, Rust, Axum, SQLx, MySQL, WebSocket, REST API, Docker, and React Native/Expo.</p>
-        <p>Implemented local-first AI assistant runtime, multi-step reasoning, tool execution, background tasks, provider-based LLM integration, tracing, and production infrastructure.</p>
+        <p>Founded and led the development of <a href="https://relayna.com">Relayna</a>, an agentic AI assistant platform for desktop, web, cloud, and mobile.</p>
+        <ul>
+          <li>Architected an AI runtime that turns model responses into multi-step workflows: selecting tools, executing actions, incorporating results, and producing a final response.</li>
+          <li>Built a flexible inference layer supporting multiple LLM providers, model-specific capabilities, and both local and cloud configurations.</li>
+          <li>Developed grounded AI workflows across email, documents, web browsing, browser automation, files, and productivity integrations, with execution traces for transparency.</li>
+          <li>Implemented semantic document search using embeddings, with support for local and remote embedding models across user files and Google Drive sources.</li>
+          <li>Added vision-powered image understanding and local speech transcription to support multimodal assistant workflows.</li>
+          <li>Designed safeguards around tool execution, permissions, confirmations, and real-world actions.</li>
+          <li>Led the development of the product across desktop, cloud runtime, backend, web, and mobile, and managed its production deployment infrastructure.</li>
+        </ul>
       </div>
     </article>
 
