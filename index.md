@@ -60,7 +60,11 @@ permalink: /
       <p class="project-kicker">Company / AI platform</p>
       <h3>Relayna</h3>
       <p>AI assistant platform across desktop, web, cloud, and mobile with local-first runtime, tool execution, provider integrations, tracing, and production infrastructure.</p>
-      <a href="https://relayna.com">relayna.com</a>
+    </article>
+    <article class="project-card">
+      <p class="project-kicker">Rust / security software</p>
+      <h3>Jetico</h3>
+      <p>Security product systems including an adaptive text-classification pipeline in Rust with Candle/CUDA, document search and indexing, and activation licensing.</p>
     </article>
     <article class="project-card">
       <p class="project-kicker">Founder / high-load</p>
