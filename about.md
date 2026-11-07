@@ -115,8 +115,8 @@ permalink: /
       <p class="social-stats-handle">@igumnov · on Habr since 2009</p>
       <ul class="social-metrics">
         <li><strong>87</strong><span>karma</span></li>
-        <li><strong>145,4</strong><span>rating</span></li>
-        <li><strong>108</strong><span>followers</span></li>
+        <li><strong>141,4</strong><span>rating</span></li>
+        <li><strong>109</strong><span>followers</span></li>
         <li><strong>42</strong><span>articles</span></li>
         <li><strong>292</strong><span>comments</span></li>
         <li><strong>128K+</strong><span>reach in 30 days</span></li>
@@ -125,18 +125,21 @@ permalink: /
 
     <article class="social-stats-card">
       <h3><a href="https://github.com/evgenyigumnov">GitHub</a></h3>
-      <p class="social-stats-handle">@evgenyigumnov · on GitHub since 2015</p>
+      <p class="social-stats-handle">@evgenyigumnov + @igumnoff · on GitHub since 2015</p>
       <ul class="social-metrics">
-        <li><strong>7</strong><span>public repositories</span></li>
-        <li><strong>222</strong><span>stars total</span></li>
+        <li><strong>15</strong><span>public repositories (7 profile · 8 org)</span></li>
+        <li><strong>768</strong><span>stars across repositories</span></li>
         <li><strong>91</strong><span>followers</span></li>
       </ul>
-      <p class="repository-list-title">Top repositories</p>
+      <p class="repository-list-title">Top repositories across profile and organization</p>
       <ul class="repository-list">
-        <li><span>rustsn</span><strong>75 stars</strong></li>
-        <li><span>cblt</span><strong>72 stars</strong></li>
-        <li><span>candle-simplified-example</span><strong>40 stars</strong></li>
-        <li><span>blueprint4llm</span><strong>22 stars</strong></li>
+        <li><a href="https://github.com/igumnoff/shiva">shiva</a><strong>439 stars</strong></li>
+        <li><a href="https://github.com/evgenyigumnov/rustsn">rustsn</a><strong>75 stars</strong></li>
+        <li><a href="https://github.com/evgenyigumnov/cblt">cblt</a><strong>72 stars</strong></li>
+        <li><a href="https://github.com/igumnoff/metatron">metatron</a><strong>69 stars</strong></li>
+        <li><a href="https://github.com/evgenyigumnov/candle-simplified-example">candle-simplified-example</a><strong>40 stars</strong></li>
+        <li><a href="https://github.com/igumnoff/gabriel2">gabriel2</a><strong>26 stars</strong></li>
+        <li><a href="https://github.com/evgenyigumnov/blueprint4llm">blueprint4llm</a><strong>22 stars</strong></li>
       </ul>
     </article>
   </div>
