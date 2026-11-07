@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about
+permalink: /
 ---
 
 <section class="about-hero">
@@ -27,13 +27,13 @@ permalink: /about
   </div>
 </section>
 
-<section class="about-contact">
+<section id="contact" class="about-contact">
   <a href="mailto:igumnovnsk@gmail.com">igumnovnsk@gmail.com</a>
   <a href="https://t.me/ievkz">Telegram @ievkz</a>
-  <a href="https://github.com/evgenyigumnov">GitHub</a>
+  <a href="https://github.com/evgenyigumnov">GitHub @evgenyigumnov</a>
   <a href="https://www.linkedin.com/in/evgeny-igumnov-5121841/">LinkedIn</a>
-  <a href="https://habr.com/ru/users/igumnov/articles/">Habr</a>
-  <a href="https://www.reddit.com/user/ievkz/">Reddit</a>
+  <a href="https://habr.com/ru/users/igumnov/articles/">Habr @igumnov</a>
+  <a href="https://www.reddit.com/user/ievkz/">Reddit u/ievkz</a>
   <a href="https://www.litres.ru/author/evgeniy-valerevich-igumnov/">Books</a>
   <a href="https://www.instagram.com/secretnsk">Instagram</a>
 </section>
@@ -55,6 +55,81 @@ permalink: /about
     <strong>Rust / AI</strong>
     <span>current technical focus</span>
   </article>
+</section>
+
+<section id="selected-work" class="about-section">
+  <div class="section-heading">
+    <p class="eyebrow">Selected work</p>
+    <h2>Products and systems built from architecture through production.</h2>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <p class="project-kicker">Rust / security software</p>
+      <h3>Jetico</h3>
+      <p>Security product systems including an adaptive text-classification pipeline in Rust with Candle/CUDA, document search and indexing, and activation licensing.</p>
+    </article>
+    <article class="project-card">
+      <p class="project-kicker">Company / AI platform</p>
+      <h3>Relayna</h3>
+      <p>AI assistant platform across desktop, web, cloud, and mobile with a local-first runtime, tool execution, provider integrations, tracing, and production infrastructure.</p>
+    </article>
+    <article class="project-card">
+      <p class="project-kicker">Founder / high-load</p>
+      <h3>MyLivePage</h3>
+      <p>Website builder scaled to 10 million users and more than 20 million page views per day.</p>
+    </article>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="section-heading">
+    <p class="eyebrow">Community &amp; open source</p>
+    <h2>Numbers from developer communities and open-source work.</h2>
+  </div>
+
+  <div class="social-stats-grid">
+    <article class="social-stats-card">
+      <h3><a href="https://www.reddit.com/user/ievkz/">Reddit</a></h3>
+      <p class="social-stats-handle">u/ievkz</p>
+      <p class="social-stats-summary">Active in 3 communities:</p>
+      <ul class="community-list">
+        <li><a href="https://www.reddit.com/r/rust/">r/rust</a></li>
+        <li><a href="https://www.reddit.com/r/LocalLLaMA/">r/LocalLLaMA</a></li>
+        <li><a href="https://www.reddit.com/r/ollama/">r/ollama</a></li>
+      </ul>
+    </article>
+
+    <article class="social-stats-card">
+      <h3><a href="https://habr.com/ru/users/igumnov/articles/">Habr</a></h3>
+      <p class="social-stats-handle">@igumnov · on Habr since 2009</p>
+      <ul class="social-metrics">
+        <li><strong>87</strong><span>karma</span></li>
+        <li><strong>145,4</strong><span>rating</span></li>
+        <li><strong>108</strong><span>followers</span></li>
+        <li><strong>42</strong><span>articles</span></li>
+        <li><strong>292</strong><span>comments</span></li>
+        <li><strong>128K+</strong><span>reach in 30 days</span></li>
+      </ul>
+    </article>
+
+    <article class="social-stats-card">
+      <h3><a href="https://github.com/evgenyigumnov">GitHub</a></h3>
+      <p class="social-stats-handle">@evgenyigumnov · on GitHub since 2015</p>
+      <ul class="social-metrics">
+        <li><strong>7</strong><span>public repositories</span></li>
+        <li><strong>222</strong><span>stars total</span></li>
+        <li><strong>91</strong><span>followers</span></li>
+      </ul>
+      <p class="repository-list-title">Top repositories</p>
+      <ul class="repository-list">
+        <li><span>rustsn</span><strong>75 stars</strong></li>
+        <li><span>cblt</span><strong>72 stars</strong></li>
+        <li><span>candle-simplified-example</span><strong>40 stars</strong></li>
+        <li><span>blueprint4llm</span><strong>22 stars</strong></li>
+      </ul>
+    </article>
+  </div>
 </section>
 
 <section class="about-section">

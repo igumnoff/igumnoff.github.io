@@ -474,6 +474,116 @@ a {
   margin-top: 6px;
 }
 
+.social-stats-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.social-stats-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.social-stats-card h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.social-stats-card h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.social-stats-handle,
+.social-stats-summary,
+.repository-list-title {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 6px 0 0;
+}
+
+.social-stats-summary {
+  margin-top: 24px;
+}
+
+.social-metrics,
+.community-list,
+.repository-list {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.social-metrics {
+  display: grid;
+  gap: 18px 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.social-metrics strong,
+.social-metrics span {
+  display: block;
+}
+
+.social-metrics strong {
+  color: var(--text);
+  font-size: 25px;
+  letter-spacing: -0.02em;
+}
+
+.social-metrics span {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.community-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.community-list a {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 11px;
+  text-decoration: none;
+}
+
+.repository-list-title {
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.repository-list {
+  display: grid;
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.repository-list li {
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  font-size: 13px;
+  gap: 8px;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.repository-list strong {
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-size: 12px;
+}
+
 .about-section {
   margin-top: 82px;
 }
@@ -641,6 +751,7 @@ a {
   .post-list > li,
   .about-hero,
   .about-stats,
+  .social-stats-grid,
   .about-focus-grid,
   .timeline article {
     grid-template-columns: 1fr;

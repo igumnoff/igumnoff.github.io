@@ -6,10 +6,9 @@
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="/">Work</a>
-          <a href="/blog">Writing</a>
-          <a href="/about">About</a>
-          <a href="/about">Contact</a>
+          <a href="{{ "/" | relative_url }}">About</a>
+          <a href="{{ "/blog" | relative_url }}">Writing</a>
+          <a href="{{ "/#contact" | relative_url }}">Contact</a>
         </nav>
       {%- if site.author %}
         <ul class="contact-list">
