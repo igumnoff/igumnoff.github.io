@@ -91,12 +91,22 @@ permalink: /
   <div class="social-stats-grid">
     <article class="social-stats-card">
       <h3><a href="https://www.reddit.com/user/ievkz/">Reddit</a></h3>
-      <p class="social-stats-handle">u/ievkz</p>
-      <p class="social-stats-summary">Active in 3 communities:</p>
+      <p class="social-stats-handle">u/ievkz · on Reddit since Apr 6, 2024</p>
+      <ul class="social-metrics">
+        <li><strong>1,166</strong><span>karma</span></li>
+        <li><strong>1,087</strong><span>post karma</span></li>
+        <li><strong>79</strong><span>comment karma</span></li>
+        <li><strong>416</strong><span>contributions</span></li>
+        <li><strong>61</strong><span>communities</span></li>
+      </ul>
+      <p class="repository-list-title">Recent communities</p>
       <ul class="community-list">
-        <li><a href="https://www.reddit.com/r/rust/">r/rust</a></li>
-        <li><a href="https://www.reddit.com/r/LocalLLaMA/">r/LocalLLaMA</a></li>
+        <li><a href="https://www.reddit.com/r/ChatGPTCoding/">r/ChatGPTCoding</a></li>
+        <li><a href="https://www.reddit.com/r/LocalLLM/">r/LocalLLM</a></li>
         <li><a href="https://www.reddit.com/r/ollama/">r/ollama</a></li>
+        <li><a href="https://www.reddit.com/r/LLMDevs/">r/LLMDevs</a></li>
+        <li><a href="https://www.reddit.com/r/LLM/">r/LLM</a></li>
+        <li><a href="https://www.reddit.com/r/AI_Agents/">r/AI_Agents</a></li>
       </ul>
     </article>
 
