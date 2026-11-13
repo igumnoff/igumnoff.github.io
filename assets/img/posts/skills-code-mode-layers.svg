@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Three levels for discovering and using MCP tools</title>
+  <desc id="desc">Persistent context points the agent to a relevant Skill. The Skill names the workflow and MCP methods. Code Mode searches for full method signatures and executes the selected calls.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f8fc"/>
+      <stop offset="1" stop-color="#e8f0fa"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#173b68"/>
+      <stop offset="1" stop-color="#2768a7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#203a5b" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M1 1 11 6 1 11Z" fill="#567ba6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="1040" rx="28" fill="url(#bg)"/>
+  <text x="600" y="72" text-anchor="middle" fill="#13243a" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700">What the agent loads, and when</text>
+  <text x="600" y="112" text-anchor="middle" fill="#60748c" font-family="Inter,Arial,sans-serif" font-size="19">A short path from a task to the MCP operation it needs</text>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="150" width="1010" height="218" rx="22" fill="#fff"/>
+    <path d="M117 150h966a22 22 0 0 1 22 22v56H95v-56a22 22 0 0 1 22-22Z" fill="url(#blue)"/>
+  </g>
+  <circle cx="148" cy="198" r="23" fill="#f4b95e"/>
+  <text x="148" y="206" text-anchor="middle" fill="#13243a" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">1</text>
+  <text x="190" y="193" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="1">PERSISTENT CONTEXT</text>
+  <text x="190" y="222" fill="#d9eaff" font-family="Inter,Arial,sans-serif" font-size="16">Always present; kept brief</text>
+  <text x="140" y="274" fill="#26384d" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700">The agent sees:</text>
+  <rect x="140" y="292" width="395" height="47" rx="11" fill="#edf4fb"/>
+  <text x="160" y="322" fill="#294d73" font-family="Inter,Arial,sans-serif" font-size="17">Short descriptions of available Skills</text>
+  <rect x="554" y="292" width="250" height="47" rx="11" fill="#edf4fb"/>
+  <text x="679" y="322" text-anchor="middle" fill="#294d73" font-family="ui-monospace,Menlo,monospace" font-size="17">search()</text>
+  <rect x="823" y="292" width="237" height="47" rx="11" fill="#edf4fb"/>
+  <text x="941" y="322" text-anchor="middle" fill="#294d73" font-family="ui-monospace,Menlo,monospace" font-size="17">execute()</text>
+
+  <path d="M600 379v41" fill="none" stroke="#567ba6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="435" width="1010" height="218" rx="22" fill="#fff"/>
+    <path d="M117 435h966a22 22 0 0 1 22 22v56H95v-56a22 22 0 0 1 22-22Z" fill="#267f85"/>
+  </g>
+  <circle cx="148" cy="483" r="23" fill="#f4b95e"/>
+  <text x="148" y="491" text-anchor="middle" fill="#13243a" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">2</text>
+  <text x="190" y="478" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="1">SKILL</text>
+  <text x="190" y="507" fill="#d9f3f1" font-family="Inter,Arial,sans-serif" font-size="16">Loaded when the task matches a workflow</text>
+  <text x="140" y="559" fill="#26384d" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700">A concise guide names:</text>
+  <rect x="140" y="577" width="284" height="47" rx="11" fill="#e8f5f3"/>
+  <text x="282" y="607" text-anchor="middle" fill="#235c61" font-family="Inter,Arial,sans-serif" font-size="17">Relevant MCP servers</text>
+  <rect x="443" y="577" width="284" height="47" rx="11" fill="#e8f5f3"/>
+  <text x="585" y="607" text-anchor="middle" fill="#235c61" font-family="Inter,Arial,sans-serif" font-size="17">Methods to look up</text>
+  <rect x="746" y="577" width="314" height="47" rx="11" fill="#e8f5f3"/>
+  <text x="903" y="607" text-anchor="middle" fill="#235c61" font-family="Inter,Arial,sans-serif" font-size="17">Steps for the workflow</text>
+
+  <path d="M600 664v41" fill="none" stroke="#567ba6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="720" width="1010" height="250" rx="22" fill="#fff"/>
+    <path d="M117 720h966a22 22 0 0 1 22 22v56H95v-56a22 22 0 0 1 22-22Z" fill="#384b68"/>
+  </g>
+  <circle cx="148" cy="768" r="23" fill="#f4b95e"/>
+  <text x="148" y="776" text-anchor="middle" fill="#13243a" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">3</text>
+  <text x="190" y="763" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="1">CODE MODE MCP</text>
+  <text x="190" y="792" fill="#dbe5f3" font-family="Inter,Arial,sans-serif" font-size="16">Full details arrive only when needed</text>
+  <rect x="140" y="840" width="414" height="86" rx="14" fill="#edf4fb"/>
+  <text x="164" y="873" fill="#294d73" font-family="ui-monospace,Menlo,monospace" font-size="20" font-weight="700">search()</text>
+  <text x="164" y="903" fill="#52677f" font-family="Inter,Arial,sans-serif" font-size="16">Find a method and its signature</text>
+  <path d="M567 883h52" stroke="#567ba6" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="632" y="840" width="428" height="86" rx="14" fill="#fff2d9"/>
+  <text x="656" y="873" fill="#72501d" font-family="ui-monospace,Menlo,monospace" font-size="20" font-weight="700">execute()</text>
+  <text x="656" y="903" fill="#755f3e" font-family="Inter,Arial,sans-serif" font-size="16">Run the selected MCP calls in JavaScript</text>
+
+  <text x="600" y="1010" text-anchor="middle" fill="#60748c" font-family="Inter,Arial,sans-serif" font-size="16">Brief guidance up front · detailed operations on demand</text>
+</svg>
