@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How I received a job offer, and they hid a way to launch malicious code through Git inside the ZIP"
-date: 2026-11-14 12:00:00 +0100
+date: 2026-11-14 12:00:00 +0500
 image: /assets/img/posts/zip-trap-git-status.jpg
 ---
 
