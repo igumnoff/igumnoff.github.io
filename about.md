@@ -96,8 +96,6 @@ permalink: /
         <li><strong>1,170</strong><span>karma</span></li>
         <li><strong>1,089</strong><span>post karma</span></li>
         <li><strong>81</strong><span>comment karma</span></li>
-        <li><strong>506</strong><span>contributions</span></li>
-        <li><strong>61</strong><span>communities</span></li>
       </ul>
     </article>
 
@@ -105,13 +103,13 @@ permalink: /
       <h3><a href="https://habr.com/ru/users/igumnov/articles/">Habr</a></h3>
       <p class="social-stats-handle">@igumnov · on Habr since 2009</p>
       <ul class="social-metrics">
-        <li><strong>87</strong><span>karma</span></li>
-        <li><strong>334,8</strong><span>rating</span></li>
-        <li><strong>113</strong><span>followers</span></li>
-        <li><strong>45</strong><span>articles</span></li>
-        <li><strong>294</strong><span>comments</span></li>
+        <li><strong>104</strong><span>karma</span></li>
+        <li><strong>353,8</strong><span>rating</span></li>
+        <li><strong>117</strong><span>followers</span></li>
+        <li><strong>46</strong><span>articles</span></li>
+        <li><strong>302</strong><span>comments</span></li>
         <li><strong>128K+</strong><span>reach in 30 days</span></li>
-        <li><strong>5th</strong><span>author ranking · Nov 16, 2026</span></li>
+        <li><strong>4th</strong><span>author ranking · Nov 16, 2026</span></li>
       </ul>
     </article>
 
