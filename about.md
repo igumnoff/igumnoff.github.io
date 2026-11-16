@@ -91,11 +91,11 @@ permalink: /
   <div class="social-stats-grid">
     <article class="social-stats-card">
       <h3><a href="https://www.reddit.com/user/ievkz/">Reddit</a></h3>
-      <p class="social-stats-handle">u/ievkz · on Reddit since Apr 6, 2024</p>
+      <p class="social-stats-handle">u/ievkz · Principal Software Engineer · on Reddit since Apr 6, 2024</p>
       <ul class="social-metrics">
-        <li><strong>1,170</strong><span>karma</span></li>
-        <li><strong>1,089</strong><span>post karma</span></li>
-        <li><strong>81</strong><span>comment karma</span></li>
+        <li><strong>19</strong><span>followers</span></li>
+        <li><strong>1,557</strong><span>karma</span></li>
+        <li><strong>448</strong><span>contributions</span></li>
       </ul>
     </article>
 
