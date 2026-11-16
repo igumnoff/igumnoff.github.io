@@ -1,11 +1,14 @@
 ---
 layout: post
 title: "Stop Burning Tokens on File Searches: How QMD Helps Coding Agents Save Up to 55%"
-date: 2026-11-16 12:00:00 +0500
+date: 2026-11-16 10:00:00 +0500
 categories: [ai, programming, developer-tools]
+image: /assets/img/posts/qmd-code-search.svg
 ---
 
 I noticed that, before carrying out a task, coding agents run `find`, `rg --files`, or `glob` to locate files and the classes and modules they need. Then they search file contents with `rg` or `grep`. This burns a lot of tokens. So I decided to see whether semantic search could save tokens compared with all of the above. If a local GPU is sitting idle, why not use it for semantic search?
+
+![Illustration of a coding agent using QMD semantic search to narrow a large codebase to relevant results](/assets/img/posts/qmd-code-search.svg)
 
 I work at a company focused on security. In one of my projects, I use semantic search for sensitive documents. Then an acquaintance sent me a link to an open-source project that tackles the same problem.
 The project is called "QMD - Query Markup Documents." It runs from the command line, extracts text from documents in all formats, and creates an index. It supports several search modes:

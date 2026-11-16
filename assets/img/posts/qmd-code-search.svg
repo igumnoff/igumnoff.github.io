@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">QMD helps coding agents find the signal in a large codebase</title>
+  <desc id="desc">A technology illustration showing many code files flowing through a semantic search index to a coding agent with a small set of relevant results.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07182b"/>
+      <stop offset="1" stop-color="#103a5a"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9df7ec"/>
+      <stop offset="1" stop-color="#3eb8db"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe49a"/>
+      <stop offset="1" stop-color="#ffad5b"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#88cbe0" opacity=".14"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" rx="26" fill="url(#bg)"/>
+  <rect width="1200" height="675" rx="26" fill="url(#dots)"/>
+  <circle cx="610" cy="380" r="290" fill="#28c7cc" opacity=".06"/>
+  <path d="M0 533 Q310 474 600 548 T1200 514 V675 H0Z" fill="#061322" opacity=".42"/>
+
+  <text x="62" y="76" fill="#9df7ec" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">AI DEVELOPER TOOLS</text>
+  <text x="60" y="139" fill="#f6fbff" font-family="Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="1">FIND THE SIGNAL.</text>
+  <text x="62" y="175" fill="#8db5c9" font-family="Arial, sans-serif" font-size="20" font-weight="500">Less searching. Better context for coding agents.</text>
+
+  <!-- A noisy codebase: many files and repeated manual searches. -->
+  <g transform="translate(60 244)">
+    <text x="0" y="-18" fill="#a8c4d4" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">A LARGE CODEBASE</text>
+    <g opacity=".55" transform="translate(8 20) rotate(-8 115 90)">
+      <rect width="224" height="142" rx="12" fill="#193b56" stroke="#4c7690" stroke-width="2"/>
+      <path d="M0 34h224" stroke="#4c7690" stroke-width="2"/>
+      <circle cx="18" cy="17" r="5" fill="#ff8f75"/><circle cx="35" cy="17" r="5" fill="#ffd16f"/><circle cx="52" cy="17" r="5" fill="#70dccb"/>
+      <path d="M20 59h103M20 79h168M20 99h136M20 119h86" stroke="#67b9d0" stroke-width="6" stroke-linecap="round" opacity=".72"/>
+    </g>
+    <g opacity=".82" transform="translate(46 62) rotate(6 115 90)">
+      <rect width="224" height="142" rx="12" fill="#102a42" stroke="#66a0b6" stroke-width="2"/>
+      <path d="M0 34h224" stroke="#4c7690" stroke-width="2"/>
+      <circle cx="18" cy="17" r="5" fill="#ff8f75"/><circle cx="35" cy="17" r="5" fill="#ffd16f"/><circle cx="52" cy="17" r="5" fill="#70dccb"/>
+      <text x="19" y="63" fill="#9df7ec" font-family="monospace" font-size="15">src/search.rs</text>
+      <path d="M20 83h151M20 104h118M20 124h164" stroke="#85b4ca" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+    </g>
+    <g transform="translate(191 140)">
+      <circle cx="0" cy="0" r="44" fill="#0c2237" stroke="url(#gold)" stroke-width="9"/>
+      <circle cx="0" cy="0" r="29" fill="#f6c46f" opacity=".14"/>
+      <path d="M31 32l37 39" stroke="url(#gold)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M-18 -3h36M0 -21v38" stroke="#f5d28d" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+    </g>
+    <text x="0" y="265" fill="#7f9eb0" font-family="monospace" font-size="14">find · grep · glob · repeat</text>
+  </g>
+
+  <!-- The semantic index narrows the search and connects relevant snippets. -->
+  <path d="M365 390 C410 390 414 390 447 390" fill="none" stroke="#7195aa" stroke-width="4" stroke-dasharray="8 10"/>
+  <path d="M425 379l20 11-20 11" fill="none" stroke="#9df7ec" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(475 252)">
+    <text x="78" y="-18" fill="#a8c4d4" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">SEMANTIC SEARCH</text>
+    <ellipse cx="128" cy="77" rx="112" ry="40" fill="#1c6680" stroke="#8cefe3" stroke-width="3" filter="url(#glow)"/>
+    <path d="M16 77v126c0 22 50 40 112 40s112-18 112-40V77" fill="#12445f" stroke="#75d9d7" stroke-width="3"/>
+    <ellipse cx="128" cy="203" rx="112" ry="40" fill="#0e334c" stroke="#75d9d7" stroke-width="3"/>
+    <ellipse cx="128" cy="77" rx="112" ry="40" fill="#17607a" stroke="#a0fff0" stroke-width="3"/>
+    <text x="128" y="84" fill="#f5ffff" font-family="Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="4">QMD</text>
+    <g fill="url(#gold)" stroke="#ffedb5" stroke-width="2">
+      <circle cx="64" cy="142" r="9"/><circle cx="110" cy="124" r="8"/><circle cx="157" cy="150" r="10"/><circle cx="197" cy="124" r="7"/>
+    </g>
+    <g stroke="#8df3e5" stroke-width="3" opacity=".9">
+      <path d="M64 142l46-18 47 26 40-26M64 142l48 36 45-28 40 20" fill="none"/>
+    </g>
+    <text x="128" y="291" fill="#a8d3dc" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">index · embed · rerank</text>
+  </g>
+
+  <!-- A coding agent receives a few useful results instead of the whole repository. -->
+  <path d="M725 390 C766 390 780 390 816 390" fill="none" stroke="#82d9d5" stroke-width="4"/>
+  <path d="M795 379l20 11-20 11" fill="none" stroke="#9df7ec" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(835 242)">
+    <text x="0" y="-8" fill="#a8c4d4" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">CODING AGENT</text>
+    <!-- Friendly assistant -->
+    <rect x="21" y="36" width="105" height="88" rx="33" fill="url(#cyan)" stroke="#d7fffa" stroke-width="3"/>
+    <rect x="38" y="61" width="71" height="39" rx="18" fill="#0b2a42"/>
+    <circle cx="59" cy="80" r="6" fill="#9df7ec"/><circle cx="88" cy="80" r="6" fill="#9df7ec"/>
+    <path d="M74 36V20M65 19h18" stroke="#d7fffa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M21 74H8M126 74h13" stroke="#d7fffa" stroke-width="6" stroke-linecap="round"/>
+    <path d="M55 125v22M94 125v22" stroke="#80cbd5" stroke-width="10" stroke-linecap="round"/>
+    <!-- Focused result panel -->
+    <rect x="147" y="42" width="163" height="140" rx="12" fill="#0a2035" stroke="#5b9db6" stroke-width="2"/>
+    <text x="164" y="68" fill="#8cefe3" font-family="monospace" font-size="13">TOP RESULTS</text>
+    <rect x="163" y="82" width="130" height="27" rx="5" fill="#194461"/>
+    <circle cx="176" cy="95" r="5" fill="#ffd27b"/>
+    <path d="M190 94h83" stroke="#a7d8e2" stroke-width="4" stroke-linecap="round"/>
+    <rect x="163" y="116" width="112" height="22" rx="5" fill="#143953"/>
+    <circle cx="176" cy="127" r="4" fill="#77dfce"/>
+    <path d="M190 127h65" stroke="#8fb7ca" stroke-width="4" stroke-linecap="round"/>
+    <rect x="163" y="145" width="121" height="22" rx="5" fill="#143953"/>
+    <circle cx="176" cy="156" r="4" fill="#77dfce"/>
+    <path d="M190 156h75" stroke="#8fb7ca" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Compact impact badge. -->
+  <g transform="translate(1007 500)" filter="url(#glow)">
+    <circle r="69" fill="#122c42" stroke="url(#gold)" stroke-width="5"/>
+    <text x="0" y="-2" fill="#ffe29a" font-family="Arial, sans-serif" font-size="23" font-weight="800" text-anchor="middle">UP TO</text>
+    <text x="0" y="31" fill="#ffffff" font-family="Arial, sans-serif" font-size="35" font-weight="900" text-anchor="middle">55%</text>
+  </g>
+  <text x="60" y="628" fill="#7297aa" font-family="Arial, sans-serif" font-size="14" letter-spacing="1.4">QMD + GITNEXUS · RELEVANT CONTEXT, NOT MORE FILES</text>
+</svg>
