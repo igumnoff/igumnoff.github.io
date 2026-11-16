@@ -93,20 +93,11 @@ permalink: /
       <h3><a href="https://www.reddit.com/user/ievkz/">Reddit</a></h3>
       <p class="social-stats-handle">u/ievkz · on Reddit since Apr 6, 2024</p>
       <ul class="social-metrics">
-        <li><strong>1,166</strong><span>karma</span></li>
-        <li><strong>1,087</strong><span>post karma</span></li>
-        <li><strong>79</strong><span>comment karma</span></li>
-        <li><strong>416</strong><span>contributions</span></li>
+        <li><strong>1,170</strong><span>karma</span></li>
+        <li><strong>1,089</strong><span>post karma</span></li>
+        <li><strong>81</strong><span>comment karma</span></li>
+        <li><strong>506</strong><span>contributions</span></li>
         <li><strong>61</strong><span>communities</span></li>
-      </ul>
-      <p class="repository-list-title">Recent communities</p>
-      <ul class="community-list">
-        <li><a href="https://www.reddit.com/r/ChatGPTCoding/">r/ChatGPTCoding</a></li>
-        <li><a href="https://www.reddit.com/r/LocalLLM/">r/LocalLLM</a></li>
-        <li><a href="https://www.reddit.com/r/ollama/">r/ollama</a></li>
-        <li><a href="https://www.reddit.com/r/LLMDevs/">r/LLMDevs</a></li>
-        <li><a href="https://www.reddit.com/r/LLM/">r/LLM</a></li>
-        <li><a href="https://www.reddit.com/r/AI_Agents/">r/AI_Agents</a></li>
       </ul>
     </article>
 
@@ -115,11 +106,12 @@ permalink: /
       <p class="social-stats-handle">@igumnov · on Habr since 2009</p>
       <ul class="social-metrics">
         <li><strong>87</strong><span>karma</span></li>
-        <li><strong>141,4</strong><span>rating</span></li>
-        <li><strong>109</strong><span>followers</span></li>
-        <li><strong>42</strong><span>articles</span></li>
-        <li><strong>292</strong><span>comments</span></li>
+        <li><strong>334,8</strong><span>rating</span></li>
+        <li><strong>113</strong><span>followers</span></li>
+        <li><strong>45</strong><span>articles</span></li>
+        <li><strong>294</strong><span>comments</span></li>
         <li><strong>128K+</strong><span>reach in 30 days</span></li>
+        <li><strong>5th</strong><span>author ranking · Nov 16, 2026</span></li>
       </ul>
     </article>
 
@@ -128,18 +120,8 @@ permalink: /
       <p class="social-stats-handle">@evgenyigumnov + @igumnoff · on GitHub since 2015</p>
       <ul class="social-metrics">
         <li><strong>15</strong><span>public repositories (7 profile · 8 org)</span></li>
-        <li><strong>768</strong><span>stars across repositories</span></li>
+        <li><strong>770</strong><span>stars across repositories</span></li>
         <li><strong>91</strong><span>followers</span></li>
-      </ul>
-      <p class="repository-list-title">Top repositories across profile and organization</p>
-      <ul class="repository-list">
-        <li><a href="https://github.com/igumnoff/shiva">shiva</a><strong>439 stars</strong></li>
-        <li><a href="https://github.com/evgenyigumnov/rustsn">rustsn</a><strong>75 stars</strong></li>
-        <li><a href="https://github.com/evgenyigumnov/cblt">cblt</a><strong>72 stars</strong></li>
-        <li><a href="https://github.com/igumnoff/metatron">metatron</a><strong>69 stars</strong></li>
-        <li><a href="https://github.com/evgenyigumnov/candle-simplified-example">candle-simplified-example</a><strong>40 stars</strong></li>
-        <li><a href="https://github.com/igumnoff/gabriel2">gabriel2</a><strong>26 stars</strong></li>
-        <li><a href="https://github.com/evgenyigumnov/blueprint4llm">blueprint4llm</a><strong>22 stars</strong></li>
       </ul>
     </article>
   </div>
@@ -252,4 +234,20 @@ permalink: /
   <p class="eyebrow">Education</p>
   <h2>Master of Computer Science</h2>
   <p>Novosibirsk State Technical University, Faculty of Automation and Computer Engineering, Software Development. 1996-2002.</p>
+</section>
+
+<section class="about-section">
+  <div class="section-heading">
+    <p class="eyebrow">Writing</p>
+    <h2>Posts from the blog</h2>
+  </div>
+
+  <div class="writing-list">
+    {% for post in site.posts %}
+      <article class="writing-item">
+        <span><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time></span>
+        <strong><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></strong>
+      </article>
+    {% endfor %}
+  </div>
 </section>
