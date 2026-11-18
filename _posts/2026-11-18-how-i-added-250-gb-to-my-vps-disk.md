@@ -3,9 +3,12 @@ layout: post
 title: "How I Added 250 GB to My VPS Disk for €4 a Month Using S3 and ext4"
 date: 2026-11-18 08:00:00 +0100
 categories: [devops, docker, storage]
+image: /assets/img/posts/vps-storage-s3backer.png
 ---
 
 I recently ran into a shortage of disk space on my VPS. I currently rent a VPS for €7 a month with this configuration: 4 vCPUs, 8 GB of RAM, and a 120 GB NVMe drive. It has 50 GB of free space left. But I need to run a Docker container whose image is 76 GB. I could upgrade my current VPS to get a 240 GB disk, but that would cost €30 a month. That’s steep. I noticed that my hosting provider offers 250 GB of S3 storage for just €4 a month, accessible over its internal network. So I started wondering how I could turn it into a filesystem and have Docker store files there.
+
+![A VPS connected to S3 storage to expand its available disk space](/assets/img/posts/vps-storage-s3backer.png)
 
 First, I tried rclone. It lets you create a FUSE filesystem from your S3 storage. To speed things up, you can cache frequently used files on a local SSD using the --vfs-cache-max-size flag. Unfortunately, Docker uses overlay2, which requires filesystem operations that rclone mount does not guarantee: atomic renames, correct chmod and chown behavior, hard links, and extended attributes. In short, a full POSIX filesystem is needed.
 
