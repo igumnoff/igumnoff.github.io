@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How I Added 250 GB to My VPS Disk for €4 a Month Using S3 and ext4"
-date: 2026-11-18 12:00:00 +0100
+date: 2026-11-18 08:00:00 +0100
 categories: [devops, docker, storage]
 ---
 
